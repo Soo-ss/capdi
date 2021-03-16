@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Test from "./pages/Test";
+// import Home from "./pages/Home";
 
 function App() {
   return (
     <>
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Test} />
+          {/* <Route exact path="/" component={Home} /> */}
           {/* <Route path="/total1" component={Total} /> */}
           {/* <Route path="/total2" component={Total} /> */}
           {/* <Route path="/total3" component={Total} /> */}
