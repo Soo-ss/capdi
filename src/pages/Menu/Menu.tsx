@@ -7,7 +7,7 @@ function Menu() {
     // 메뉴창
     <div className="container">
       <Header />
-      <h1 className="menu__title">메뉴</h1>
+      <h1 className="menu__title">ddd</h1>
       <div className="menu__list"></div>
     </div>
   );
