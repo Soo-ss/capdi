@@ -1,11 +1,11 @@
 import React from "react";
 
-function Header() {
+function Result() {
   return (
     <div>
-      <h1>메뉴</h1>
+      <h1>Result</h1>
     </div>
   );
 }
 
-export default Header;
+export default Result;

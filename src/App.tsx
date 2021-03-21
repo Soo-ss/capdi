@@ -1,20 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Test from "./pages/Test";
-// import Home from "./pages/Home";
+import ClockCheck from "./pages/ClockCheck/ClockCheck";
+import ListCheck from "./pages/ListCheck/ListCheck";
+import MenuPage from "./pages/Menu/Menu";
+import Result from "./pages/ResultPage/Result";
+import ShapeCheck from "./pages/ShapeCheck/ShapeCheck";
 
 function App() {
   return (
     <>
       <Router>
         <Switch>
-          <Route exact path="/" component={Test} />
-          {/* <Route exact path="/" component={Home} /> */}
-          {/* <Route path="/total1" component={Total} /> */}
-          {/* <Route path="/total2" component={Total} /> */}
-          {/* <Route path="/total3" component={Total} /> */}
-          {/* <Route path="/total4" component={Total} /> */}
-          {/* <Route path="/total5" component={Total} /> */}
+          <Route exact path="/" component={MenuPage} />
+          <Route path="/clock" component={ClockCheck} />
+          <Route path="/list-check" component={ListCheck} />
+          <Route path="/result" component={Result} />
+          <Route path="/shape-check" component={ShapeCheck} />
         </Switch>
       </Router>
     </>

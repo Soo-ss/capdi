@@ -1,5 +1,18 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 
+// @font-face {
+//   font-family: "RedHatDisplay";
+//   /* src: url("../fonts/PorscheNextWLa-Bold.ttf"); */
+//   src: url("../fonts/RedHatDisplay-Regular.ttf");
+// }
+
+/* https주의 */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+// .noto {
+//   font-family:  sans-serif;
+// }
+
 /* 여백 초기화 */
 body,
 div,
@@ -49,8 +62,8 @@ textarea,
 select,
 button,
 table {
-  font-family: AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum,
-    "돋움", sans-serif;
+  font-family: "Noto Sans KR", AppleSDGothicNeo-Regular, "Malgun Gothic",
+    "맑은 고딕", dotum, "돋움", sans-serif;
   color: #222;
   font-size: 13px;
   line-height: 1.5;
@@ -111,7 +124,7 @@ img {
 .container {
   position: relative;
   // test
-  background-color: #ccc;
+  // background-color: #ccc;
   width: 360px;
   margin: 0 auto;
 }
