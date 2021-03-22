@@ -3,7 +3,7 @@ import React from "react";
 function ListCheck() {
   return (
     <div>
-      <h1>List</h1>
+      <h1>리스트</h1>
     </div>
   );
 }
