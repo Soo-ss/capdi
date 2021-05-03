@@ -1,3 +1,73 @@
 .menu__title {
-  font-size: 40px;
+  font-size: 30px;
+  background-color: #f8f5ff;
+}
+
+.logo__img {
+  width: 60px;
+  height: 60px;
+}
+
+.mmse__menu {
+  display: flex;
+  align-items: center;
+}
+
+.clock__menu {
+  display: flex;
+  align-items: center;
+}
+
+.preventive__menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__discription {
+  margin: 0 13px;
+}
+
+.discription {
+  font-size: 5px;
+  color: #cfcdd4;
+}
+
+.right__button1 {
+  position: absolute;
+  top: 95px;
+  left: 300px;
+  font-size: 50px;
+  background-color: transparent;
+}
+
+.right__button2 {
+  position: absolute;
+  top: 275px;
+  left: 300px;
+  font-size: 50px;
+  background-color: transparent;
+}
+
+.right__button3 {
+  position: absolute;
+  top: 455px;
+  left: 300px;
+  font-size: 50px;
+  background-color: transparent;
+}
+
+.mmse {
+  font-size: 20px;
+  padding: 60px;
+}
+
+.clock {
+  padding: 60px;
+  background-color: #f8f5ff;
+  font-size: 20px;
+}
+
+.preventive {
+  padding: 60px;
+  font-size: 20px;
 }
