@@ -1,11 +1,12 @@
 import React from "react";
+import Layout from "../../partials/Layout";
 
-function ShapeCheck() {
+const ShapeCheck = () => {
   return (
-    <div>
+    <Layout>
       <h1>ShapeCheck</h1>
-    </div>
+    </Layout>
   );
-}
+};
 
 export default ShapeCheck;

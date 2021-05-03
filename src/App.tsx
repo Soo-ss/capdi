@@ -5,6 +5,7 @@ import ListCheck from "./pages/ListCheck/ListCheck";
 import MenuPage from "./pages/Menu/Menu";
 import Result from "./pages/ResultPage/Result";
 import ShapeCheck from "./pages/ShapeCheck/ShapeCheck";
+import TmTest from "./pages/TmTest";
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={MenuPage} />
-          <Route path="/clock" component={ClockCheck} />
-          <Route path="/list-check" component={ListCheck} />
-          <Route path="/result" component={Result} />
-          <Route path="/shape-check" component={ShapeCheck} />
+          <Route exact path="/tm" component={TmTest} />
+          <Route exact path="/clock" component={ClockCheck} />
+          <Route exact path="/list-check" component={ListCheck} />
+          <Route exact path="/result" component={Result} />
+          <Route exact path="/shape-check" component={ShapeCheck} />
         </Switch>
       </Router>
     </>

@@ -1,14 +1,13 @@
 import React from "react";
-import Header from "../../partials/Header";
 import "./menuStyle.scss";
 import mmse from "./img/mmse.png";
 import clock from "./img/clock.png";
 import preventive from "./img/preventive.png";
+import Layout from "../../partials/Layout";
 
 function Menu() {
   return (
-    // 메뉴창
-    <div className="container">
+    <Layout>
       <h1 className="menu__title">메뉴</h1>
       <div className="mmse">
         <div className="mmse__menu">
@@ -52,7 +51,7 @@ function Menu() {
           <i className="fas fa-angle-right"></i>
         </button>
       </div>
-    </div>
+    </Layout>
   );
 }
 

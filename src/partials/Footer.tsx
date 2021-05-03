@@ -11,7 +11,9 @@ const Footer = () => {
         left: "0",
         bottom: "0",
       }}>
-      <h1 style={{ color: "#fff", fontSize: "20px" }}>푸터가 고정되었어요~</h1>
+      <h1 style={{ color: "#fff", fontSize: "15px" }}>
+        푸터에 메뉴를 넣을 예정이지만 필요없으면 안넣어도 됩니다.
+      </h1>
       {/* <input type="text" /> */}
     </div>
   );
