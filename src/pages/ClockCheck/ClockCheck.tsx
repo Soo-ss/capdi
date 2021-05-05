@@ -39,7 +39,6 @@ const ClockCheck = () => {
 
   return (
     <Layout>
-      <p></p>
       <script
         className="jsbin"
         src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
