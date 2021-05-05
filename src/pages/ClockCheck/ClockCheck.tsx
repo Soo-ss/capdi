@@ -1,5 +1,6 @@
 import React from "react";
 import $ from "jquery";
+import "./clockStyle.scss";
 import Layout from "../../partials/Layout";
 
 // rafce
@@ -38,17 +39,14 @@ const ClockCheck = () => {
 
   return (
     <Layout>
+      <p></p>
       <script
         className="jsbin"
         src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <div className="text-title">
+        <h6>Upload Image</h6>
+      </div>
       <div className="file-upload">
-        <button
-          className="file-upload-btn"
-          type="button"
-          onClick={(e) => $(".file-upload-input").trigger("click")}>
-          Add Image
-        </button>
-
         <div className="image-upload-wrap">
           <input
             className="file-upload-input"
@@ -60,6 +58,12 @@ const ClockCheck = () => {
             <h3>Drag and drop a file or select add Image</h3>
           </div>
         </div>
+        <button
+          className="file-upload-btn"
+          type="button"
+          onClick={(e) => $(".file-upload-input").trigger("click")}>
+          Upload file
+        </button>
         <div className="file-upload-content">
           <img className="file-upload-image" src="#" alt="your image" />
           <div className="image-title-wrap">
@@ -67,32 +71,13 @@ const ClockCheck = () => {
               type="button"
               onClick={(e) => removeUpload()}
               className="remove-image">
-              Remove <span className="image-title">Uploaded Image</span>
+              Remove <span className="image-title">Upload file</span>
             </button>
           </div>
         </div>
       </div>
     </Layout>
   );
-
-  // return (
-  //   <Layout>
-  //     <div className="control">
-  //       <div className="align">
-  //         <button id="button_repeat" onClick={(e) => console.log("onClick")}>
-  //           Click
-  //         </button>
-  //       </div>
-
-  //       <div className="align">
-  //         <div>
-  //           <b>Event Trace</b>
-  //         </div>
-  //         <div className="eventTrace"></div>
-  //       </div>
-  //     </div>
-  //   </Layout>
-  // );
 };
 
 export default ClockCheck;
