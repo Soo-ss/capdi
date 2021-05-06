@@ -25,6 +25,7 @@
 
 .menu__discription {
   margin: 0 13px;
+  color: black;
 }
 
 .discription {
@@ -32,7 +33,9 @@
   color: #cfcdd4;
 }
 
-.right__button1 {
+.mmse__button {
+  color: gray;
+  cursor: pointer;
   position: absolute;
   top: 95px;
   left: 300px;
@@ -40,7 +43,9 @@
   background-color: transparent;
 }
 
-.right__button2 {
+.clock__button {
+  color: gray;
+  cursor: pointer;
   position: absolute;
   top: 275px;
   left: 300px;
@@ -48,7 +53,9 @@
   background-color: transparent;
 }
 
-.right__button3 {
+.preventive__button {
+  color: gray;
+  cursor: pointer;
   position: absolute;
   top: 455px;
   left: 300px;
@@ -70,4 +77,19 @@
 .preventive {
   padding: 60px;
   font-size: 20px;
+}
+
+.mmse:hover {
+  transition: background-color 300ms linear;
+  background-color: #e9e2f8f5;
+}
+
+.clock:hover {
+  transition: background-color 300ms linear;
+  background-color: #e9e2f8f5;
+}
+
+.preventive:hover {
+  transition: background-color 300ms linear;
+  background-color: #e9e2f8f5;
 }
