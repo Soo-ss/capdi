@@ -27,6 +27,7 @@ function ListCheck() {
         <div className="title">
           <h1>우울증 자가진단 테스트</h1>
         </div>
+        <br />
         <div className="subtitle">
           우울증 검사의 테스트 결과가 우울증으로 나올 경우 치매 검사 결과가
           정확하지 않을 수 있습니다. <br />
