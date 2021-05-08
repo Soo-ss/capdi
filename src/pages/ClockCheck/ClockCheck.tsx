@@ -3,11 +3,13 @@ import "./clockStyle.scss";
 import Layout from "../../partials/Layout";
 import * as tf from "@tensorflow/tfjs";
 import * as tmImage from "@teachablemachine/image";
+import background from "./img/origin.png";
+import upload from "./img/upload.png";
 
 const ClockCheck = () => {
   // 이미지 업로드 정의
   const [Picture, setPicture] = useState<any>(null);
-  const [ImageData, setImageData] = useState<any>(null);
+  const [ImageData, setImageData] = useState<any>(background);
 
   const onChangePicture = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (!event.target.files) {
@@ -63,11 +65,23 @@ const ClockCheck = () => {
 
   return (
     <Layout>
-      <h1>Capdi Image Model</h1>
-      <div>
-        <input type="file" onChange={onChangePicture} />
+      <h1>시계검사</h1>
+      <h2>Upload Image</h2>
+      <div className="image-upload-wrap">
+        <img ref={myImage} src={ImageData} className="image_upload" />
       </div>
-      <img ref={myImage} src={ImageData} />
+      <div className="btn_wrap">
+        <label htmlFor="ex_file">
+          <p>Upload file</p>
+          <img src={upload}></img>
+        </label>
+        <input
+          type="file"
+          onChange={onChangePicture}
+          className="file_upload_btn"
+          id="ex_file"
+        />
+      </div>
       <div ref={labelContainer}></div>
     </Layout>
   );
