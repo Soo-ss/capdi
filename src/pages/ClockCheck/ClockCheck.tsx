@@ -1,80 +1,88 @@
-import React from "react";
-import $ from "jquery";
+import React, { useEffect, useState } from "react";
 import "./clockStyle.scss";
 import Layout from "../../partials/Layout";
-
-// rafce
+import * as tf from "@tensorflow/tfjs";
+import * as tmImage from "@teachablemachine/image";
 
 const ClockCheck = () => {
-  function readURL(input: any) {
-    if (input.files && input.files[0]) {
-      var reader = new FileReader();
+  // 이미지 업로드 정의
+  const [Picture, setPicture] = useState<any>(null);
+  const [ImageData, setImageData] = useState<any>(null);
 
-      reader.onload = function (e) {
-        $(".image-upload-wrap").hide();
+  const onChangePicture = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (!event.target.files) {
+      return;
+    }
 
-        $(".file-upload-image").attr("src");
-        $(".file-upload-content").show();
+    if (event.target.files[0]) {
+      // console.log("Picture: ", event.target.files);
+      setPicture(event.target.files[0]);
+      const reader = new FileReader();
+      reader.addEventListener("load", () => {
+        setImageData(reader.result);
+      });
+      reader.readAsDataURL(event.target.files[0]);
+    }
+  };
 
-        $(".image-title").html(input.files[0].name);
-      };
+  // 티처블머신 시작
+  let webcam: any;
+  let model: any, labelContainer: any, maxPredictions: any;
 
-      reader.readAsDataURL(input.files[0]);
-    } else {
-      removeUpload();
+  async function initTM() {
+    const publicURL = process.env.PUBLIC_URL;
+    const modelURL = publicURL + "model.json";
+    const metadataURL = publicURL + "metadata.json";
+
+    model = await tmImage.load(modelURL, metadataURL);
+    maxPredictions = model.getTotalClasses();
+
+    // const flip = true; // whether to flip the webcam
+    // webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+    // await webcam.setup(); // request access to the webcam
+    // await webcam.play();
+    window.requestAnimationFrame(loop);
+
+    // append elements to the DOM
+    // document.getElementById("webcam-container")?.appendChild(webcam.canvas);
+    labelContainer = document.getElementById("label-container");
+    for (let i = 0; i < maxPredictions; i++) {
+      labelContainer.appendChild(document.createElement("div"));
     }
   }
 
-  function removeUpload() {
-    $(".file-upload-input").replaceWith($(".file-upload-input").clone());
-    $(".file-upload-content").hide();
-    $(".image-upload-wrap").show();
+  async function loop() {
+    // webcam.update();
+    await predict();
+    window.requestAnimationFrame(loop);
   }
-  $(".image-upload-wrap").bind("dragover", function () {
-    $(".image-upload-wrap").addClass("image-dropping");
-  });
-  $(".image-upload-wrap").bind("dragleave", function () {
-    $(".image-upload-wrap").removeClass("image-dropping");
-  });
+
+  async function predict() {
+    // 이미지 가져오기
+    let image = document.getElementById("myImage");
+    // console.log(image);
+    const prediction = await model.predict(image, false);
+    // const prediction = await model.predict(webcam.canvas);
+    for (let i = 0; i < maxPredictions; i++) {
+      const classPrediction =
+        prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+      labelContainer.childNodes[i].innerHTML = classPrediction;
+    }
+  }
+
+  useEffect(() => {
+    initTM();
+    console.log("초기화");
+  }, []);
 
   return (
     <Layout>
-      <script
-        className="jsbin"
-        src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-      <div className="text-title">
-        <h6>Upload Image</h6>
+      <h1>Capdi Image Model</h1>
+      <div>
+        <input type="file" onChange={onChangePicture} />
       </div>
-      <div className="file-upload">
-        <div className="image-upload-wrap">
-          <input
-            className="file-upload-input"
-            type="file"
-            onChange={(e) => readURL(this)}
-            accept="image/*"
-          />
-          <div className="drag-text">
-            <h3>Drag and drop a file or select add Image</h3>
-          </div>
-        </div>
-        <button
-          className="file-upload-btn"
-          type="button"
-          onClick={(e) => $(".file-upload-input").trigger("click")}>
-          Upload file
-        </button>
-        <div className="file-upload-content">
-          <img className="file-upload-image" src="#" alt="your image" />
-          <div className="image-title-wrap">
-            <button
-              type="button"
-              onClick={(e) => removeUpload()}
-              className="remove-image">
-              Remove <span className="image-title">Upload file</span>
-            </button>
-          </div>
-        </div>
-      </div>
+      <img id="myImage" src={ImageData} />
+      <div id="label-container"></div>
     </Layout>
   );
 };
