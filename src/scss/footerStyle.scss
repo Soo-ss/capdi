@@ -5,8 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  align-items: center;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   .icon_img {
     width: 25px;

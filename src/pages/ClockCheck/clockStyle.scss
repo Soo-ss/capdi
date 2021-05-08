@@ -3,125 +3,40 @@ body {
   background-color: #faf9fe;
 }
 
-.text-title {
-  text-align: left;
+.clock_question {
+  font-size: 15px;
 }
 
-.text-title h6 {
-  color: #000000;
-  font-size: 30px;
-  padding: 60px 0;
-}
-
-.file-upload {
-  background-color: #faf9fe;
-  width: 300px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.file-upload-btn {
+.img_upload {
+  background-color: #fbeeff;
+  border-radius: 10px;
   width: 100%;
-  margin: 40px 0px 0px 0px;
-  color: #99879d;
-  background: #fbeeff;
-  border: none;
-  padding: 10px;
-  border-radius: 15px;
-  border-bottom: 4px solid #fbeeff;
-  transition: all 0.2s ease;
-  outline: none;
-  font-weight: 700;
-  text-align: left;
+  height: 200px;
+  margin:20px 0px 30px 0;
 }
 
-.file-upload-btn:hover {
-  background: #fae9ff;
-  color: #99879d;
-  transition: all 0.2s ease;
+.upload_btn {
+  background-color: #fbeeff;
+  border-radius: 10px;
   cursor: pointer;
+  margin-bottom: 20px;
+  p {
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+  }
 }
 
-.file-upload-btn:active {
-  border: 0;
-  transition: all 0.2s ease;
+.upload_btn:hover {
+  transition: all 300ms ease-in;
+  background-color: #f7dbff;
 }
 
-.file-upload-content {
-  display: none;
-  text-align: center;
-}
-
-.file-upload-input {
-  position: absolute;
-  margin: 0;
-  padding: 0;
+.file_select {
+  cursor: pointer;
   width: 100%;
   height: 100%;
-  outline: none;
   opacity: 0;
-  cursor: pointer;
 }
 
-.image-upload-wrap {
-  width: 300px;
-  height: 300px;
-  margin-top: 20px;
-  background-color: #fbeeff;
-  position: relative;
-  border-radius: 15px;
-}
 
-.image-dropping,
-.image-upload-wrap:hover {
-  background-color: #fae9ff;
-}
-
-.image-title-wrap {
-  padding: 0 15px 15px 15px;
-  color: #222;
-}
-
-.drag-text {
-  text-align: center;
-}
-
-.drag-text h3 {
-  font-weight: 100;
-  color: #99879d;
-  padding: 60px 0;
-}
-
-.file-upload-image {
-  max-height: 200px;
-  max-width: 200px;
-  margin: auto;
-  padding: 20px;
-}
-
-.remove-image {
-  width: 200px;
-  margin: 0;
-  color: #fff;
-  background: #cd4535;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: 4px solid #b02818;
-  transition: all 0.2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.remove-image:hover {
-  background: #c13b2a;
-  color: #ffffff;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-
-.remove-image:active {
-  border: 0;
-  transition: all 0.2s ease;
-}
