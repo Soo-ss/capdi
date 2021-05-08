@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./clockStyle.scss";
 import Layout from "../../partials/Layout";
 import * as tf from "@tensorflow/tfjs";
@@ -23,11 +23,15 @@ const ClockCheck = () => {
       });
       reader.readAsDataURL(event.target.files[0]);
     }
+
+    // 파일업로드 이후 바로 예측하기
+    predict();
   };
 
   // 티처블머신 시작
-  let webcam: any;
-  let model: any, labelContainer: any, maxPredictions: any;
+  let model: any, labelContainer: any, maxPredictions: any, myImage: any;
+  myImage = useRef();
+  labelContainer = useRef();
 
   async function initTM() {
     const publicURL = process.env.PUBLIC_URL;
@@ -37,32 +41,19 @@ const ClockCheck = () => {
     model = await tmImage.load(modelURL, metadataURL);
     maxPredictions = model.getTotalClasses();
 
-    // const flip = true; // whether to flip the webcam
-    // webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
-    // await webcam.setup(); // request access to the webcam
-    // await webcam.play();
-    window.requestAnimationFrame(loop);
-
-    // append elements to the DOM
-    // document.getElementById("webcam-container")?.appendChild(webcam.canvas);
-    labelContainer = document.getElementById("label-container");
+    labelContainer = labelContainer.current;
     for (let i = 0; i < maxPredictions; i++) {
       labelContainer.appendChild(document.createElement("div"));
     }
   }
 
-  async function loop() {
-    // webcam.update();
-    await predict();
-    window.requestAnimationFrame(loop);
-  }
-
   async function predict() {
+    await initTM();
+
     // 이미지 가져오기
-    let image = document.getElementById("myImage");
-    // console.log(image);
-    const prediction = await model.predict(image, false);
-    // const prediction = await model.predict(webcam.canvas);
+    myImage = myImage.current;
+    // myImage = document.getElementById("myImage");
+    const prediction = await model.predict(myImage, false);
     for (let i = 0; i < maxPredictions; i++) {
       const classPrediction =
         prediction[i].className + ": " + prediction[i].probability.toFixed(2);
@@ -70,19 +61,14 @@ const ClockCheck = () => {
     }
   }
 
-  useEffect(() => {
-    initTM();
-    console.log("초기화");
-  }, []);
-
   return (
     <Layout>
       <h1>Capdi Image Model</h1>
       <div>
         <input type="file" onChange={onChangePicture} />
       </div>
-      <img id="myImage" src={ImageData} />
-      <div id="label-container"></div>
+      <img ref={myImage} src={ImageData} />
+      <div ref={labelContainer}></div>
     </Layout>
   );
 };
