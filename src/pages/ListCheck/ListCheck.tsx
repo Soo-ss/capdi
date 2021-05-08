@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../partials/Layout";
+import { Link } from "react-router-dom";
 import ListTwo from "./ListTwo";
 import ListThree from "./ListThree";
 import ListFour from "./ListFour";
@@ -110,6 +111,25 @@ function ListCheck() {
       <ListNineteen />
       <br />
       <ListTwenty />
+      <br />
+      <br />
+      <br />
+      <Link to="/calc-depression">
+        <div className="Caculation">
+          <div className="move_to_calculation">
+            <div className="menu_discription">
+              <p className="discription_title">우울증 진단 결과 보기</p>
+            </div>
+          </div>
+          <button className="calculation_button">
+            <i className="fas fa-angle-right"></i>
+          </button>
+        </div>
+      </Link>
+      <br />
+      <br />
+      <br />
+      <br />
     </Layout>
   );
 }

@@ -6,6 +6,7 @@ import MenuPage from "./pages/Menu/Menu";
 import Result from "./pages/ResultPage/Result";
 import ShapeCheck from "./pages/ShapeCheck/ShapeCheck";
 import TmTest from "./pages/TmTest";
+import CalcScore from "./pages/ListCheck/CalcScore";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/list-check" component={ListCheck} />
           <Route exact path="/result" component={Result} />
           <Route exact path="/shape-check" component={ShapeCheck} />
+          <Route exact path="/calc-depression" component={CalcScore} />
         </Switch>
       </Router>
     </>
