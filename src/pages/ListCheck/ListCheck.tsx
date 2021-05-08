@@ -19,6 +19,7 @@ import ListSeventeen from "./ListSeventeen";
 import ListEighteen from "./ListEighteen";
 import ListNineteen from "./ListNineteen";
 import ListTwenty from "./ListTwenty";
+import { Link } from "react-router-dom";
 
 function ListCheck() {
   return (
@@ -110,6 +111,23 @@ function ListCheck() {
       <ListNineteen />
       <br />
       <ListTwenty />
+      <br />
+      <br />
+      <br />
+      <Link to="/depress-result">
+        <div className="depress_result">
+          <div className="menu__discription">
+            <p className="discription__title">우울증 검사 결과</p>
+          </div>
+          <button className="depression-score">
+            <i className="fas fa-angle-right"></i>
+          </button>
+        </div>
+      </Link>
+      <br />
+      <br />
+      <br />
+      <br />
     </Layout>
   );
 }
