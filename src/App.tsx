@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/list-check" component={ListCheck} />
           <Route exact path="/result" component={Result} />
           <Route exact path="/shape-check" component={ShapeCheck} />
-          <Route exact path="/depress-result" component={CalcScore} />
+          <Route exact path="/calc-depression" component={CalcScore} />
         </Switch>
       </Router>
     </>

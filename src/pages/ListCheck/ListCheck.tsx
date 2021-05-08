@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../partials/Layout";
+import { Link } from "react-router-dom";
 import ListTwo from "./ListTwo";
 import ListThree from "./ListThree";
 import ListFour from "./ListFour";
@@ -19,8 +20,6 @@ import ListSeventeen from "./ListSeventeen";
 import ListEighteen from "./ListEighteen";
 import ListNineteen from "./ListNineteen";
 import ListTwenty from "./ListTwenty";
-import { Link } from "react-router-dom";
-
 function ListCheck() {
   return (
     <Layout>
@@ -114,12 +113,14 @@ function ListCheck() {
       <br />
       <br />
       <br />
-      <Link to="/depress-result">
+      <Link to="/calc-depression">
         <div className="depress_result">
-          <div className="menu__discription">
-            <p className="discription__title">우울증 검사 결과</p>
+          <div className="move_to_dep_result">
+            <div className="menu_description">
+              <p className="description_title">우울증 진단 결과 보기</p>
+            </div>
           </div>
-          <button className="depression-score">
+          <button className="calculation_button">
             <i className="fas fa-angle-right"></i>
           </button>
         </div>
