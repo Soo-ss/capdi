@@ -10,6 +10,7 @@
   position: fixed;
   bottom: 0;
   .icon_img {
+    transition: all 0.2s ease;
     width: 25px;
     height: 25px;
     filter: opacity(40%);
