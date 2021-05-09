@@ -3,8 +3,9 @@ import "./clockStyle.scss";
 import Layout from "../../partials/Layout";
 import * as tf from "@tensorflow/tfjs";
 import * as tmImage from "@teachablemachine/image";
-import background from "./img/origin.png";
-import upload from "./img/upload.png";
+import background from "../../images/origin.png";
+import upload from "../../images/upload.png";
+import { Link } from "react-router-dom";
 
 const ClockCheck = () => {
   // 이미지 업로드 정의
@@ -83,6 +84,13 @@ const ClockCheck = () => {
         />
       </div>
       <div ref={labelContainer}></div>
+      <Link to="/result">
+        <div className="submit_wrap">
+          <div className="">
+            <button className="submit_btn">제출하기</button>
+          </div>
+        </div>
+      </Link>
     </Layout>
   );
 };
