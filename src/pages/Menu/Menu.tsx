@@ -10,12 +10,12 @@ function Menu() {
   return (
     <Layout>
       <h1 className="menu__title">메뉴</h1>
-      <Link to="/list-check">
+      <Link to="/shape-check">
         <div className="mmse">
           <div className="mmse__menu">
             <img src={mmse} alt="mypic" className="logo__img" />
             <div className="menu__discription">
-              <p className="discription__title">MMSE-M검사</p>
+              <p className="discription__title">MMSE 검사</p>
               <p className="discription">
                 설문 형식의 테스트로, 5분만에 치매를 진단할 수 있습니다.
               </p>

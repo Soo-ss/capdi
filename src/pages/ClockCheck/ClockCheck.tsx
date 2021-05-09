@@ -66,6 +66,19 @@ const ClockCheck = () => {
 
   return (
     <Layout>
+<<<<<<< HEAD
+      <h1>시계그리기 검사</h1><br></br>
+      <p className="clock_question">Q. 11시 10분을 그리고 사진을 업로드 해주세요.</p>
+      <div className="img_upload">
+        <img ref={myImage} src={ImageData} />
+      </div>
+
+      <div className="upload_btn">
+        <p>사진 불러오기</p>
+        <input className="file_select" type="file" onChange={onChangePicture} />
+      </div>
+      <div className="clock_result" ref={labelContainer}></div>
+=======
       <h1>시계검사</h1>
       <h2>Upload Image</h2>
       <div className="image-upload-wrap">
@@ -91,6 +104,7 @@ const ClockCheck = () => {
           </div>
         </div>
       </Link>
+>>>>>>> master
     </Layout>
   );
 };

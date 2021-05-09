@@ -1,12 +1,13 @@
 .footer {
   height: 70px;
   width: 100%;
-  background: #ffffff;
+  background: #ffffffec;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  align-items: center;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   .icon_img {
     transition: all 0.2s ease;
