@@ -4,38 +4,38 @@ import Layout from "../../partials/Layout";
 //import $ from "jquery";
 import { Component } from "react";
 
-class App extends Component {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      selectedOption: "rarely",
-    };
-  }
-  render() {
-    return {
-      /*JSX code*/
-    };
-  }
+// class App extends Component {
+//   constructor(props: any) {
+//     super(props);
+//     this.state = {
+//       selectedOption: "rarely",
+//     };
+//   }
+//   render() {
+//     return {
+//       /*JSX code*/
+//     };
+//   }
 
-  handleOptionChange = (changeEvent: any) => {
-    this.setState({
-      selectedOption: changeEvent.target.value,
-    });
-  };
-}
+//   handleOptionChange = (changeEvent: any) => {
+//     this.setState({
+//       selectedOption: changeEvent.target.value,
+//     });
+//   };
+// }
 
-handleFormSubmit = (formSubmitEvent: any) => {
-  formSubmitEvent.preventDefault();
+// handleFormSubmit = (formSubmitEvent: any) => {
+//   formSubmitEvent.preventDefault();
 
-  console.log("You have submitted:", document.state.selectedOption);
-};
+//   console.log("You have submitted:", document.state.selectedOption);
+// };
 
-export default App;
+// export default App;
 
 function TestCheck() {
   return (
     <Layout>
-      <form onSubmit={this.handleFormSubmit}>
+      {/* <form onSubmit={this.handleFormSubmit}>
         <div className="main">
           <div className="questions">
             <label>
@@ -81,7 +81,7 @@ function TestCheck() {
             거의 대부분 <br />
           </div>
         </div>
-      </form>
+      </form> */}
     </Layout>
   );
 }

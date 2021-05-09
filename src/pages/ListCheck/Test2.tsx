@@ -1,21 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../../partials/Layout";
-import { Component } from "react";
 
-
-
-const handleClickRadioButton = () => {
-  setInputStatus(!inputStatus)
-}
-
-<RadioBtn type = "radio" id="radio" />
-<label htmlFor="radio"> Radio </label>
-
-
-function Test2() {const [inputStatus, setInputStatus]=useState(false)
+function Test2() {
+  const [inputStatus, setInputStatus] = useState(false);
   return (
     <Layout>
-      <form onSubmit={this.handleFormSubmit}>
+      {/* <form onSubmit={this.handleFormSubmit}>
         <div className="main">
           <div className="questions">
             <label>
@@ -61,7 +51,7 @@ function Test2() {const [inputStatus, setInputStatus]=useState(false)
             거의 대부분 <br />
           </div>
         </div>
-      </form>
+      </form> */}
     </Layout>
   );
 }

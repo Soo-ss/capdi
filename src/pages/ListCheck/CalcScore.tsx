@@ -1,24 +1,11 @@
 import React from "react";
 import Layout from "../../partials/Layout";
 import ListCheck from "./ListCheck";
-var totalScore = 0;
-
-<ListCheck />;
-
-//document.querySelector('input[name="answer"]:checkd')
-
-/*
-function checkRadioButton(objName){
-  var radioObj = document.all(objName);
-
-
-
-}
-*/
 
 function Calc(answer: string) {
   let elements = document.getElementsByName(answer).values;
   let checkedButton;
+  let totalScore = 0;
 
   var answers = new Array(
     "answer",
