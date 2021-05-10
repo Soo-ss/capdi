@@ -84,13 +84,11 @@ const ClockCheck = () => {
         />
       </div>
       <div ref={labelContainer}></div>
-      <Link to="/result">
-        <div className="submit_wrap">
-          <div className="">
-            <button className="submit_btn">제출하기</button>
-          </div>
-        </div>
-      </Link>
+      <div className="submit_wrap">
+        <Link to="/result">
+          <button className="submit_btn">제출하기</button>
+        </Link>
+      </div>
     </Layout>
   );
 };
