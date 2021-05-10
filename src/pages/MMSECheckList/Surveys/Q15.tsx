@@ -7,9 +7,9 @@ const Q15 = () => {
   return (
     <Layout>
       <Survey
-        listNumber={lists[15].listNumber}
-        title={lists[15].title}
-        nextPage={lists[15].nextPage}
+        listNumber={lists[20].listNumber}
+        title={lists[20].title}
+        nextPage={lists[20].nextPage}
       />
     </Layout>
   );

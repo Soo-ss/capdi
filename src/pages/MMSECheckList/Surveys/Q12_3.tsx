@@ -3,7 +3,7 @@ import Layout from "../../../partials/Layout";
 import Survey from "../../../partials/Survey";
 import { lists } from "../QuestionLists";
 
-const Q14 = () => {
+const Q12_3 = () => {
   return (
     <Layout>
       <Survey
@@ -15,4 +15,4 @@ const Q14 = () => {
   );
 };
 
-export default Q14;
+export default Q12_3;
