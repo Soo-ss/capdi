@@ -1,11 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ClockCheck from "./pages/ClockCheck/ClockCheck";
-import ListCheck from "./pages/ListCheck/ListCheck";
 import MenuPage from "./pages/Menu/Menu";
 import Result from "./pages/ResultPage/Result";
 import ShapeCheck from "./pages/ShapeCheck/ShapeCheck";
-import CalcScore from "./pages/ListCheck/CalcScore";
 import List1 from "./pages/TestPage/List1";
 import List2 from "./pages/TestPage/List2";
 import List3 from "./pages/TestPage/List3";
@@ -37,10 +35,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={MenuPage} />
           <Route exact path="/clock" component={ClockCheck} />
-          <Route exact path="/list-check" component={ListCheck} />
           <Route exact path="/result" component={Result} />
           <Route exact path="/shape-check" component={ShapeCheck} />
-          <Route exact path="/calc-depression" component={CalcScore} />
           {/* <Route exact path="/list1" component={List1} />
           <Route exact path="/list2" component={List2} />
           <Route exact path="/list3" component={List3} /> */}

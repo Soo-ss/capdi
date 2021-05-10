@@ -8,7 +8,7 @@ interface IProps {
   nextPage: string;
 }
 
-const Survey = (props: IProps) => {
+const MMSESurvey = (props: IProps) => {
   const [Checked, setChecked] = useState(1);
   const { score, onCalcScore } = useCalcScore();
 
@@ -67,4 +67,4 @@ const Survey = (props: IProps) => {
   );
 };
 
-export default Survey;
+export default MMSESurvey;

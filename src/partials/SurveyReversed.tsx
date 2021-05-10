@@ -8,7 +8,7 @@ interface IProps {
   nextPage: string;
 }
 
-const Survey = (props: IProps) => {
+const SurveyReversed = (props: IProps) => {
   const [Checked, setChecked] = useState(1);
   const { score, onCalcScore } = useCalcScore();
 
@@ -25,20 +25,11 @@ const Survey = (props: IProps) => {
       <div className="questions">
         <input
           type="radio"
-          value={0}
+          value={3}
           name="score"
-          onChange={() => setChecked(0)}
+          onChange={() => setChecked(3)}
         />{" "}
         극히 드물다 <br />
-      </div>
-      <div className="questions">
-        <input
-          type="radio"
-          value={1}
-          name="score"
-          onChange={() => setChecked(1)}
-        />{" "}
-        가끔 <br />
       </div>
       <div className="questions">
         <input
@@ -47,14 +38,23 @@ const Survey = (props: IProps) => {
           name="score"
           onChange={() => setChecked(2)}
         />{" "}
+        가끔 <br />
+      </div>
+      <div className="questions">
+        <input
+          type="radio"
+          value={1}
+          name="score"
+          onChange={() => setChecked(1)}
+        />{" "}
         자주 <br />
       </div>
       <div className="questions">
         <input
           type="radio"
-          value={3}
+          value={0}
           name="score"
-          onChange={() => setChecked(3)}
+          onChange={() => setChecked(0)}
         />{" "}
         거의 대부분 <br />
       </div>
@@ -67,4 +67,4 @@ const Survey = (props: IProps) => {
   );
 };
 
-export default Survey;
+export default SurveyReversed;

@@ -3,16 +3,16 @@ import Layout from "../../../partials/Layout";
 import Survey from "../../../partials/Survey";
 import { lists } from "../QuestionLists";
 
-const Q16 = () => {
+const Q14_1 = () => {
   return (
     <Layout>
       <Survey
-        listNumber={lists[21].listNumber}
-        title={lists[21].title}
-        nextPage={lists[21].nextPage}
+        listNumber={lists[18].listNumber}
+        title={lists[18].title}
+        nextPage={lists[18].nextPage}
       />
     </Layout>
   );
 };
 
-export default Q16;
+export default Q14_1;

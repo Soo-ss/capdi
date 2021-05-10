@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../../../partials/Layout";
-import SurveyReversed from "../../../partials/SurveyReversed";
+import Survey from "../../../partials/Survey";
 import { lists } from "../QuestionLists";
 
-const Q16 = () => {
+const Q12_5 = () => {
   return (
     <Layout>
-      <SurveyReversed
+      <Survey
         listNumber={lists[16].listNumber}
         title={lists[16].title}
         nextPage={lists[16].nextPage}
@@ -15,4 +15,4 @@ const Q16 = () => {
   );
 };
 
-export default Q16;
+export default Q12_5;
