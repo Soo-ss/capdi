@@ -111,19 +111,19 @@ export const lists = [
     listNumber: "문항 16",
     title:
       "(보호자분꼐서 피시험자분의 답을 보고 득점을 체크해주세요)지금부터 제가 말씀드리는 대로 해 보십시오. 한 번만 말씀드릴 것이니 잘 들으시고 그대로 해 보십시오. 제가 종이를 한 장 드릴 것입니다. 그러면 그 종이를 오른손으로 받아, 반으로 접은 다음, 무릎 위에 올려놓으십시오.",
-    nextPage: "result",
+    nextPage: "q17",
   },
   {
     listNumber: "문항 17",
     title:
       "(겹친 오각형 그림을 가리키며) 여기에 오각형이 겹쳐져 있는 그림이 있습니다. 이 그림을 아래 빈 곳에 그대로 그려보십시오.",
-    nextPage: "result",
+    nextPage: "q18",
   },
   {
     listNumber: "문항 18",
     title:
       "(보호자분꼐서 피시험자분의 답을 보고 득점을 체크해주세요) 옷은 왜 빨아서 입습니까?",
-    nextPage: "result",
+    nextPage: "q19",
   },
   {
     listNumber: "문항 19",
