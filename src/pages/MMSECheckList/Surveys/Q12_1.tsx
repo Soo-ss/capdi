@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../../../partials/Layout";
-import Survey from "../../../partials/Survey";
+import MMSESurvey from "../../../partials/MMSESurvey";
 import { lists } from "../QuestionLists";
 
-const Q12 = () => {
+const Q12_1 = () => {
   return (
     <Layout>
-      <Survey
+      <MMSESurvey
         listNumber={lists[12].listNumber}
         title={lists[12].title}
         nextPage={lists[12].nextPage}
@@ -15,4 +15,4 @@ const Q12 = () => {
   );
 };
 
-export default Q12;
+export default Q12_1;
