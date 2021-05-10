@@ -1,0 +1,19 @@
+.back_button {
+  background: #faf9fe;
+  padding: 3% 0px 3% 3%;
+  width: 69px;
+  display: flex;
+  align-items: center;
+  .icon_img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    padding-left: 3px;
+    color: #99879d;
+    font-size: 18px;
+  }
+}
