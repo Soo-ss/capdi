@@ -7,9 +7,9 @@ const Q19 = () => {
   return (
     <Layout>
       <MMSESurvey
-        listNumber={lists[19].listNumber}
-        title={lists[19].title}
-        nextPage={lists[19].nextPage}
+        listNumber={lists[24].listNumber}
+        title={lists[24].title}
+        nextPage={lists[24].nextPage}
       />
     </Layout>
   );

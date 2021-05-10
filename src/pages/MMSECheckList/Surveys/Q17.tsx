@@ -1,15 +1,15 @@
 import React from "react";
 import Layout from "../../../partials/Layout";
-import Survey from "../../../partials/Survey";
+import MMSESurvey from "../../../partials/MMSESurvey";
 import { lists } from "../QuestionLists";
 
 const Q17 = () => {
   return (
     <Layout>
-      <Survey
-        listNumber={lists[17].listNumber}
-        title={lists[17].title}
-        nextPage={lists[17].nextPage}
+      <MMSESurvey
+        listNumber={lists[22].listNumber}
+        title={lists[22].title}
+        nextPage={lists[22].nextPage}
       />
     </Layout>
   );
