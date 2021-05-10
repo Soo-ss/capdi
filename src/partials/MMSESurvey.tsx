@@ -29,7 +29,7 @@ const MMSESurvey = (props: IProps) => {
           name="score"
           onChange={() => setChecked(0)}
         />{" "}
-        극히 드물다 <br />
+        틀림 <br />
       </div>
       <div className="questions">
         <input
@@ -38,25 +38,7 @@ const MMSESurvey = (props: IProps) => {
           name="score"
           onChange={() => setChecked(1)}
         />{" "}
-        가끔 <br />
-      </div>
-      <div className="questions">
-        <input
-          type="radio"
-          value={2}
-          name="score"
-          onChange={() => setChecked(2)}
-        />{" "}
-        자주 <br />
-      </div>
-      <div className="questions">
-        <input
-          type="radio"
-          value={3}
-          name="score"
-          onChange={() => setChecked(3)}
-        />{" "}
-        거의 대부분 <br />
+        맞음 <br />
       </div>
       <div>
         <Link onClick={() => onCalcScore(Checked)} to={props.nextPage}>
