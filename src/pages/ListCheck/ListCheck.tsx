@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../partials/Layout";
 import { Link } from "react-router-dom";
-import ListComponent from "../../partials/ListComponent";
+import ListComponent from "../../partials/Survey";
 
 function ListCheck() {
   const lists = [
@@ -88,7 +88,7 @@ function ListCheck() {
   ];
   return (
     <Layout>
-      <div className="main">
+      {/* <div className="main">
         <div className="title">
           <h1>우울증 자가진단 테스트</h1>
         </div>
@@ -139,7 +139,7 @@ function ListCheck() {
       <br />
       <br />
       <br />
-      <br />
+      <br /> */}
     </Layout>
   );
 }

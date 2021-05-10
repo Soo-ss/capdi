@@ -1,7 +1,10 @@
 import React from "react";
 import Layout from "../../partials/Layout";
+import useCalcScore from "../../redux/hooks/useCalcScore";
 
 const Result = () => {
+  const { score } = useCalcScore();
+
   let totalScore = 0;
   const lists = [
     {
@@ -53,6 +56,7 @@ const Result = () => {
       <p style={{ fontSize: "30px" }}>
         위 결과에 따라 총점 {totalScore}점으로 정상/비정상 입니다.
       </p>
+      <h1>20개 페이지 합산 점수: {score}</h1>
     </Layout>
   );
 };

@@ -14,7 +14,7 @@ const Footer = () => {
   };
   return (
     <div className="footer">
-      <Link to="/list-check">
+      <Link to="/q1">
         <div>
           <img src={exam} alt="mmse test" className="icon_img" />
         </div>
