@@ -21,7 +21,9 @@ const MMSEResult = () => {
     <Layout>
       <h1 className = "check_result">검사 결과</h1>
       <h1 className="result_score">합산 점수 : {mmseScore}점 </h1>
-      <div className="result_description2">{render_MMSEResult()}</div>
+      <div className="result_description2">
+        {render_MMSEResult()}
+        </div>
       
       <Link to="/mq1">
         <button className="return_test">
