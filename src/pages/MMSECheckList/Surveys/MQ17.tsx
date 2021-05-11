@@ -8,6 +8,7 @@ import upload from "../../../images/upload.png";
 import { Link } from "react-router-dom";
 import MMSESurveyThree from "../../../partials/MMSESurveyThree";
 import { lists } from "../QuestionLists";
+import pentagon from "./img/pentagon.png";
 
 const MQ17 = () => {
   // 이미지 업로드 정의
@@ -72,7 +73,15 @@ const MQ17 = () => {
 
   return (
     <Layout>
-      <h1>도형검사</h1>
+      
+      <MMSESurveyThree
+        listNumber={lists[22].listNumber}
+        title={lists[22].title}
+        nextPage={lists[22].nextPage}
+      />
+      <img src={pentagon} alt="mypic" className="pentagon__img" />
+
+
       <h2>Upload Image</h2>
       <div className="image-upload-wrap">
         <img ref={myImage} src={ImageData} className="image_upload" />
@@ -90,16 +99,9 @@ const MQ17 = () => {
         />
       </div>
       {renderResult()}
-      <div className="submit_wrap">
-        <Link to="/result">
-          <button className="submit_btn">제출하기</button>
-        </Link>
-      </div>
-      <MMSESurveyThree
-        listNumber={lists[22].listNumber}
-        title={lists[22].title}
-        nextPage={lists[22].nextPage}
-      />
+
+      
+
     </Layout>
   );
 };

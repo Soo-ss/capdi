@@ -70,8 +70,8 @@ const ClockCheck = () => {
 
   return (
     <Layout>
-      <h1>시계검사</h1>
-      <h2>이미지를 올려주세요 {":)"}</h2>
+      <h1>시계그리기 검사</h1>
+      <h2>Q. 11시 10분을 그리고 사진을 올려주세요. {":)"}</h2>
       <div className="image-upload-wrap">
         <img ref={myImage} src={ImageData} className="image_upload" />
       </div>
