@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import useCalcScore from "../redux/hooks/useCalcScore";
 
+
 interface IProps {
   listNumber: string;
   title: string;

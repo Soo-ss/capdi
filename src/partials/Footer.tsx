@@ -4,7 +4,8 @@ import exam from "./img/exam.png";
 import clock from "./img/clock.png";
 import preventive from "./img/preventive.png";
 import depression from "./img/depression.png";
-import { Link } from "react-router-dom";
+import home from "./img/home.png";
+import { Link, useHistory } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,6 +20,12 @@ const Footer = () => {
         <div>
           <img src={clock} alt="clock test" className="icon_img" />
           <p>시계그리기 검사</p>
+        </div>
+      </Link>
+      <Link to="/">
+        <div>
+          <img src={home} alt="menu" className="icon_img" />
+          <p>메뉴</p>
         </div>
       </Link>
       <Link to="/q1">
