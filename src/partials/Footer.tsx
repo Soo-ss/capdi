@@ -4,12 +4,12 @@ import exam from "./img/exam.png";
 import clock from "./img/clock.png";
 import preventive from "./img/preventive.png";
 import depression from "./img/depression.png";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <Link to="/q1">
+      <Link to="/mq1">
         <div>
           <img src={exam} alt="mmse test" className="icon_img" />
           <p>MMSE 검사</p>

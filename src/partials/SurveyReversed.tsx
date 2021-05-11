@@ -9,60 +9,58 @@ interface IProps {
 }
 
 const SurveyReversed = (props: IProps) => {
-  const [Checked, setChecked] = useState(1);
-  const { score, onCalcScore } = useCalcScore();
+  const lists = [
+    {
+      caseName: "극히 드물다",
+      caseScore: 3,
+    },
+    {
+      caseName: "가끔",
+      caseScore: 2,
+    },
+    {
+      caseName: "자주",
+      caseScore: 1,
+    },
+    {
+      caseName: "거의 대부분",
+      caseScore: 0,
+    },
+  ];
+  const [Checked, setChecked] = useState(-1);
+  const { onCalcScore } = useCalcScore();
 
   return (
     <div style={{ padding: "20px 0" }} className="main">
-      <div className="question-title">
-        {"<"}
-        {props.listNumber}
-        {">"}
-      </div>
+      <div className="question-title">{props.listNumber}</div>
       <br />
       <div className="question">{props.title}</div>
       <br />
-      <div className="questions">
-        <input
-          type="radio"
-          value={3}
-          name="score"
-          onChange={() => setChecked(3)}
-        />{" "}
-        극히 드물다 <br />
-      </div>
-      <div className="questions">
-        <input
-          type="radio"
-          value={2}
-          name="score"
-          onChange={() => setChecked(2)}
-        />{" "}
-        가끔 <br />
-      </div>
-      <div className="questions">
-        <input
-          type="radio"
-          value={1}
-          name="score"
-          onChange={() => setChecked(1)}
-        />{" "}
-        자주 <br />
-      </div>
-      <div className="questions">
-        <input
-          type="radio"
-          value={0}
-          name="score"
-          onChange={() => setChecked(0)}
-        />{" "}
-        거의 대부분 <br />
-      </div>
-      <div>
-        <Link onClick={() => onCalcScore(Checked)} to={props.nextPage}>
+      {lists.map((item, index) => {
+        return (
+          <div key={index} className="questions">
+            <input
+              type="radio"
+              name="score"
+              onChange={() => setChecked(item.caseScore)}
+            />
+            {item.caseName}
+          </div>
+        );
+      })}
+      {Checked === -1 ? (
+        <p style={{ padding: "10px", fontSize: "20px" }}>
+          반드시 체크해주세요!!
+        </p>
+      ) : (
+        <Link
+          style={{ padding: "10px", fontSize: "20px" }}
+          onClick={() => onCalcScore(Checked)}
+          to={props.nextPage}
+        >
           다음 페이지
         </Link>
-      </div>
+      )}
     </div>
   );
 };

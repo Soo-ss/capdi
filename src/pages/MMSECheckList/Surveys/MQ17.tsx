@@ -1,17 +1,19 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./clockStyle.scss";
-import Layout from "../../partials/Layout";
+import "../../ShapeCheck/shapeStyle.scss";
+import Layout from "../../../partials/Layout";
 import * as tf from "@tensorflow/tfjs";
 import * as tmImage from "@teachablemachine/image";
-import background from "../../images/origin.png";
-import upload from "../../images/upload.png";
+import background from "../../../images/origin.png";
+import upload from "../../../images/upload.png";
 import { Link } from "react-router-dom";
+import MMSESurveyThree from "../../../partials/MMSESurveyThree";
+import { lists } from "../QuestionLists";
 
-const ClockCheck = () => {
+const MQ17 = () => {
   // 이미지 업로드 정의
   const [Picture, setPicture] = useState<any>(null);
   const [ImageData, setImageData] = useState<any>(background);
-  const [ClockGood, setClockGood] = useState(-1);
+  const [PentagonGood, setPentagonGood] = useState(-1);
 
   const onChangePicture = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (!event.target.files) {
@@ -53,15 +55,15 @@ const ClockCheck = () => {
     // myImage = document.getElementById("myImage");
     const prediction = await model.predict(myImage, false);
 
-    // [0, 1, 2, 3] Clock Good만 가져오기
-    setClockGood(prediction[0].probability.toFixed(2) * 100);
+    // [0, 1, 2, 3] Pentagon Good만 가져오기
+    setPentagonGood(prediction[2].probability.toFixed(2) * 100);
   }
 
   const renderResult = () => {
-    // ClockGood 80% 이상
-    if (ClockGood === -1) {
+    // PentagonGood 80% 이상
+    if (PentagonGood === -1) {
       return <h1>결과 창 입니다. 이미지를 업로드 후, 3초만 기다려주세요.</h1>;
-    } else if (ClockGood >= 80) {
+    } else if (PentagonGood >= 80) {
       return <h1>정상입니다~</h1>;
     } else {
       return <h1>치매가 의심됩니다.</h1>;
@@ -70,8 +72,8 @@ const ClockCheck = () => {
 
   return (
     <Layout>
-      <h1>시계검사</h1>
-      <h2>이미지를 올려주세요 {":)"}</h2>
+      <h1>도형검사</h1>
+      <h2>Upload Image</h2>
       <div className="image-upload-wrap">
         <img ref={myImage} src={ImageData} className="image_upload" />
       </div>
@@ -93,8 +95,13 @@ const ClockCheck = () => {
           <button className="submit_btn">제출하기</button>
         </Link>
       </div>
+      <MMSESurveyThree
+        listNumber={lists[22].listNumber}
+        title={lists[22].title}
+        nextPage={lists[22].nextPage}
+      />
     </Layout>
   );
 };
 
-export default ClockCheck;
+export default MQ17;

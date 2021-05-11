@@ -3,7 +3,7 @@ import Layout from "../../../partials/Layout";
 import MMSESurvey from "../../../partials/MMSESurvey";
 import { lists } from "../QuestionLists";
 
-const Q12_3 = () => {
+const MQ12And3 = () => {
   return (
     <Layout>
       <MMSESurvey
@@ -15,4 +15,4 @@ const Q12_3 = () => {
   );
 };
 
-export default Q12_3;
+export default MQ12And3;
