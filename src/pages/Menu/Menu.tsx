@@ -10,7 +10,7 @@ function Menu() {
   return (
     <Layout>
       <h1 className="menu__title">메뉴</h1>
-      <Link to="/shape-check">
+      <Link to="/mq1">
         <div className="mmse">
           <div className="mmse__menu">
             <img src={mmse} alt="mypic" className="logo__img" />

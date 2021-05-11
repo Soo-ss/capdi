@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import useCalcScore from "../redux/hooks/useCalcScore";
+import "./surveyStyle.scss";
 
 interface IProps {
   listNumber: string;
@@ -41,7 +42,7 @@ const MMSESurvey = (props: IProps) => {
         );
       })}
       {Checked === -1 ? (
-        <p style={{ padding: "10px", fontSize: "20px" }}>
+        <p className= "check_alert" >
           반드시 체크해주세요!!
         </p>
       ) : (
@@ -50,7 +51,10 @@ const MMSESurvey = (props: IProps) => {
           onClick={() => onMMSECalcScore(Checked)}
           to={props.nextPage}
         >
-          다음 페이지
+          <button className="next_page">
+            다음 페이지
+            <i className="fas fa-arrow-right"></i>
+          </button>
         </Link>
       )}
     </div>
