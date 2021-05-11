@@ -8,16 +8,27 @@
   margin: 0 auto;
   position: fixed;
   bottom: 0;
-  .icon_img {
-    transition: all 0.2s ease;
-    width: 25px;
-    height: 25px;
-    filter: opacity(40%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .icon_img:hover {
-    filter: opacity(100%);
+  text-align: center;
+  div {
+    .icon_img {
+      transition: all 0.2s ease;
+      width: 25px;
+      height: 25px;
+      filter: opacity(40%);
+    }
+    p {
+      transition: all 0.2s ease;
+      font-size: 10px;
+      color: #9378ff;
+      opacity: 40%;
+    }
+    &:hover {
+      .icon_img {
+        filter: opacity(100%);
+      }
+      p {
+        opacity: 100%;
+      }
+    }
   }
 }

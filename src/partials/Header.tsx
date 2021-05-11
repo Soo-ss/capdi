@@ -7,17 +7,21 @@ const Header = () => {
   const history = useHistory();
 
   const goBack = () => {
-    // 현재 페이지가 MenuPage라면 뒤로가지지 않는다
     history.goBack();
   };
-  return (
-    <nav className="nav">
-      <div className="back_button" onClick={goBack}>
-        <img src={back} alt="back button" className="icon_img" />
-        <p>Back</p>
-      </div>
-    </nav>
-  );
+
+  if (history.location.pathname === "/") {
+    return <div></div>;
+  } else {
+    return (
+      <nav className="nav">
+        <div className="back_button" onClick={goBack}>
+          <img src={back} alt="back button" className="icon_img" />
+          <p>Back</p>
+        </div>
+      </nav>
+    );
+  }
 };
 
 export default Header;

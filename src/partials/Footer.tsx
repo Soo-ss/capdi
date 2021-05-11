@@ -12,21 +12,25 @@ const Footer = () => {
       <Link to="/q1">
         <div>
           <img src={exam} alt="mmse test" className="icon_img" />
+          <p>MMSE 검사</p>
         </div>
       </Link>
       <Link to="/clock">
         <div>
           <img src={clock} alt="clock test" className="icon_img" />
+          <p>시계그리기 검사</p>
         </div>
       </Link>
       <Link to="/q1">
         <div>
           <img src={depression} alt="depression" className="icon_img" />
+          <p>우울증 검사</p>
         </div>
       </Link>
       <Link to="/preventive">
         <div>
           <img src={preventive} alt="preventive" className="icon_img" />
+          <p>치매 예방법</p>
         </div>
       </Link>
     </div>
