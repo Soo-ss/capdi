@@ -21,16 +21,17 @@
 
 .result_description {
     font-size: 15px;
-    text-align: center;
+    text-align:center;
 }
 
 .result_description2 {
     background-color: #fae9ff;
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 120px;
-    border-radius: 6px;
+    height: 135px;
+    border-radius: 8px;
 }
 
 .check_result {

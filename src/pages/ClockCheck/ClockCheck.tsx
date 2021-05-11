@@ -60,18 +60,20 @@ const ClockCheck = () => {
   const renderResult = () => {
     // ClockGood 80% 이상
     if (ClockGood === -1) {
-      return <h1>결과 창 입니다. 이미지를 업로드 후, 3초만 기다려주세요.</h1>;
+      return <h2>이미지를 업로드 후, 3초만 기다려주세요.</h2>;
     } else if (ClockGood >= 80) {
-      return <h1>정상입니다~</h1>;
+      return <h2>정상입니다~</h2>;
     } else {
-      return <h1>치매가 의심됩니다.</h1>;
+      return <h2>치매가 의심됩니다. 가까운 병원에서 정밀검사를
+        받아보세요.
+      </h2>;
     }
   };
 
   return (
     <Layout>
-      <h1>시계그리기 검사</h1>
-      <h2>Q. 11시 10분을 그리고 사진을 올려주세요. {":)"}</h2>
+      <h1 className="clock_check_title">시계그리기 검사</h1>
+      <h2>Q. 11시 10분을 그리고 사진을 올려주세요.</h2>
       <div className="image-upload-wrap">
         <img ref={myImage} src={ImageData} className="image_upload" />
       </div>
