@@ -25,7 +25,7 @@ const Survey = (props: IProps) => {
       <br />
       <div className="questions">
         <input
-          type="hidden"
+          type="radio"
           value={0}
           name="score"
           onChange={() => setChecked(0)}
