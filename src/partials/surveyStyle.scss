@@ -8,6 +8,11 @@
     padding : 10px;
     color: white;
     background-color: #9378ff;
+    &:hover {
+        transition: all 200ms ease-in;
+        background: #8d70ff;
+
+    }
 }
 
 .check_alert {
