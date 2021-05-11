@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import useCalcScore from "../redux/hooks/useCalcScore";
 
+
 interface IProps {
   listNumber: string;
   title: string;
@@ -24,7 +25,7 @@ const Survey = (props: IProps) => {
       <br />
       <div className="questions">
         <input
-          type="radio"
+          type="hidden"
           value={0}
           name="score"
           onChange={() => setChecked(0)}
