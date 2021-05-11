@@ -9,42 +9,50 @@ interface IProps {
 }
 
 const MMSESurvey = (props: IProps) => {
-  const [Checked, setChecked] = useState(1);
-  const { score, onCalcScore } = useCalcScore();
+  const lists = [
+    {
+      caseName: "틀림",
+      caseScore: 0,
+    },
+    {
+      caseName: "맞음",
+      caseScore: 1,
+    },
+  ];
+  const [Checked, setChecked] = useState(-1);
+  const { onMMSECalcScore } = useCalcScore();
 
   return (
     <div style={{ padding: "20px 0" }} className="main">
-      <div className="question-title">
-        {"<"}
-        {props.listNumber}
-        {">"}
-      </div>
+      <div className="question-title">{props.listNumber}</div>
       <br />
       <div className="question">{props.title}</div>
       <br />
-      <div className="questions">
-        <input
-          type="radio"
-          value={0}
-          name="score"
-          onChange={() => setChecked(0)}
-        />{" "}
-        틀림 <br />
-      </div>
-      <div className="questions">
-        <input
-          type="radio"
-          value={1}
-          name="score"
-          onChange={() => setChecked(1)}
-        />{" "}
-        맞음 <br />
-      </div>
-      <div>
-        <Link onClick={() => onCalcScore(Checked)} to={props.nextPage}>
+      {lists.map((item, index) => {
+        return (
+          <div key={index} className="questions">
+            <input
+              type="radio"
+              name="score"
+              onChange={() => setChecked(item.caseScore)}
+            />
+            {item.caseName}
+          </div>
+        );
+      })}
+      {Checked === -1 ? (
+        <p style={{ padding: "10px", fontSize: "20px" }}>
+          반드시 체크해주세요!!
+        </p>
+      ) : (
+        <Link
+          style={{ padding: "10px", fontSize: "20px" }}
+          onClick={() => onMMSECalcScore(Checked)}
+          to={props.nextPage}
+        >
           다음 페이지
         </Link>
-      </div>
+      )}
     </div>
   );
 };

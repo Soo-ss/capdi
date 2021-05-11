@@ -1,7 +1,7 @@
 import React from "react";
 import back from "./img/back.png";
 import "../scss/headerStyle.scss";
-import { Link, useHistory, BrowserRouter } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Header = () => {
   const history = useHistory();

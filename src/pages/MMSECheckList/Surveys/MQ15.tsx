@@ -3,16 +3,16 @@ import Layout from "../../../partials/Layout";
 import MMSESurvey from "../../../partials/MMSESurvey";
 import { lists } from "../QuestionLists";
 
-const Q1 = () => {
+const MQ15 = () => {
   return (
     <Layout>
       <MMSESurvey
-        listNumber={lists[1].listNumber}
-        title={lists[1].title}
-        nextPage={lists[1].nextPage}
+        listNumber={lists[20].listNumber}
+        title={lists[20].title}
+        nextPage={lists[20].nextPage}
       />
     </Layout>
   );
 };
 
-export default Q1;
+export default MQ15;
