@@ -129,6 +129,6 @@ export const lists = [
     listNumber: "문항 19",
     title:
       'Q. (보호자분께서 피시험자분의 답을 보고 득점을 체크해주세요) "티끌 모아 태산"은 무슨 뜻입니까?',
-    nextPage: "mmse-result",
+    nextPage: "mmse_result",
   },
 ];
