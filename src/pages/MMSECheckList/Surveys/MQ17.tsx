@@ -63,7 +63,7 @@ const MQ17 = () => {
   const renderResult = () => {
     // PentagonGood 80% 이상
     if (PentagonGood === -1) {
-      return <h1>결과 창 입니다. 이미지를 업로드 후, 3초만 기다려주세요.</h1>;
+      return <h1>이미지를 업로드 후, 3초만 기다려주세요.</h1>;
     } else if (PentagonGood >= 80) {
       return <h1>정상입니다~</h1>;
     } else {
@@ -99,9 +99,6 @@ const MQ17 = () => {
         />
       </div>
       {renderResult()}
-
-      
-
     </Layout>
   );
 };
