@@ -29,6 +29,7 @@ import Q18 from "./pages/ListCheck/Surveys/Q18";
 import Q19 from "./pages/ListCheck/Surveys/Q19";
 import Q20 from "./pages/ListCheck/Surveys/Q20";
 
+import userInput from "./pages/MMSECheckList/Surveys/userInput";
 import MQ1 from "./pages/MMSECheckList/Surveys/MQ1";
 import MQ2 from "./pages/MMSECheckList/Surveys/MQ2";
 import MQ3 from "./pages/MMSECheckList/Surveys/MQ3";
@@ -65,6 +66,7 @@ function App() {
           <Route exact path="/mmse_result" component={MMSEResult} />
           {/* <Route exact path="/shape-check" component={ShapeCheck} /> */}
           <Route exact path="/clock_result" component={ClockResult} />
+          <Route exact path="/userInput" component={userInput} />
           <Route exact path="/q1" component={Q1} />
           <Route exact path="/q2" component={Q2} />
           <Route exact path="/q3" component={Q3} />
