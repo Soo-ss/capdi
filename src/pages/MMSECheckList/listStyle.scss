@@ -32,8 +32,21 @@
   border-radius: 15px;
   background-color: #9378ff;
   padding: 10px;
+  position: relative;
+  margin-left: 50px;
   &:hover {
     background-color:#8d70ff;
     transition: all 200ms ease;
   }
+}
+.notice_title {
+  text-align: center;
+}
+
+.MMSE_notice {
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fae9ff;
+  font-size: 15px;
 }

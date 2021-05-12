@@ -9,12 +9,11 @@ import { Link } from "react-router-dom";
 
 function Menu() {
   return (
-
-
     <Layout>
       <h1 className="menu__bar">
         <i className="fas fa-bars"></i>
       </h1>
+
       <Link to="/userInput">
         <div className="depression">
           <div className="depression__menu">
@@ -24,8 +23,7 @@ function Menu() {
               <p className="discription">치매 검사를 하기 전에 우울증 테스트부터 먼저 해보세요.</p>
             </div>
           </div>
-
-            <button className="preventive__button">
+            <button className="depression__button">
               <i className="fas fa-angle-right"></i>
             </button>
         </div>
@@ -37,9 +35,7 @@ function Menu() {
             <img src={mmse} alt="mypic" className="logo__img" />
             <div className="menu__discription">
               <p className="discription__title">MMSE 검사</p>
-              <p className="discription">
-                설문 형식의 테스트로, 5분만에 치매를 진단할 수 있습니다.
-              </p>
+              <p className="discription">설문 형식의 테스트로, 5분만에 치매를 진단할 수 있습니다.</p>
             </div>
           </div>
             <button className="mmse__button">
@@ -54,9 +50,7 @@ function Menu() {
             <img src={clock} alt="mypic" className="logo__img" />
             <div className="menu__discription">
               <p className="discription__title">시계그리기 검사</p>
-              <p className="discription">
-                시계그리기 검사를 통해 치매를 진단할 수 있습니다.
-              </p>
+              <p className="discription">시계그리기 검사를 통해 치매를 진단할 수 있습니다.</p>
             </div>
           </div>
             <button className="clock__button">
@@ -64,8 +58,6 @@ function Menu() {
             </button>
         </div>
       </Link>
-
-    
     </Layout>
   );
 }
