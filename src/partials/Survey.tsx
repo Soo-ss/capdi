@@ -50,7 +50,7 @@ const Survey = (props: IProps) => {
         );
       })}
       {Checked === -1 ? (
-        <p className= "check_alert" >
+        <p className= "check_alert">
           반드시 체크해주세요!!
         </p>
       ) : (

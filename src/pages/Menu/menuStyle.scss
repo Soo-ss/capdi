@@ -1,6 +1,8 @@
-.menu__title {
+.menu__bar {
   font-size: 30px;
   background-color: #f8f5ff;
+  margin-left: 15px;
+  cursor: pointer;
 }
 
 .logo__img {
@@ -18,7 +20,7 @@
   align-items: center;
 }
 
-.preventive__menu {
+.depression__menu {
   display: flex;
   align-items: center;
 }
@@ -53,7 +55,7 @@
   background-color: transparent;
 }
 
-.preventive__button {
+.dpression__button {
   color: gray;
   cursor: pointer;
   position: absolute;
@@ -65,16 +67,16 @@
 
 .mmse {
   font-size: 20px;
+  background-color: #f8f5ff;
   padding: 60px;
 }
 
 .clock {
   padding: 60px;
-  background-color: #f8f5ff;
   font-size: 20px;
 }
 
-.preventive {
+.depression {
   padding: 60px;
   font-size: 20px;
 }
@@ -89,7 +91,7 @@
   background-color: #e9e2f8f5;
 }
 
-.preventive:hover {
+.depression:hover {
   transition: background-color 300ms linear;
   background-color: #e9e2f8f5;
 }
