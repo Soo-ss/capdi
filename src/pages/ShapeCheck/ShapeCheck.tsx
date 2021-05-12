@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./shapeStyle.scss";
+import "../ClockCheck/clockStyle.scss";
 import Layout from "../../partials/Layout";
 import * as tf from "@tensorflow/tfjs";
 import * as tmImage from "@teachablemachine/image";
