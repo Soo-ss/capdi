@@ -37,6 +37,21 @@ const MMSESurveyThree = (props: IProps) => {
       <br />
       <div className="question">{props.title}</div>
       <br />
+      <div className="input-3">
+        <input
+          className="answer-input-3"
+          placeholder="정답을 입력해 주세요"
+          type="search"></input>
+        <input
+          className="answer-input-3"
+          placeholder="정답을 입력해 주세요"
+          type="search"></input>
+        <input
+          className="answer-input-3"
+          placeholder="정답을 입력해 주세요"
+          type="search"></input>
+      </div>
+      <br />
       {lists.map((item, index) => {
         return (
           <div key={index} className="questions">
@@ -50,15 +65,12 @@ const MMSESurveyThree = (props: IProps) => {
         );
       })}
       {Checked === -1 ? (
-        <p className= "check_alert">
-          반드시 체크해주세요!!
-        </p>
+        <p className="check_alert">반드시 체크해주세요!!</p>
       ) : (
         <Link
           style={{ padding: "10px", fontSize: "20px" }}
           onClick={() => onMMSECalcScore(Checked)}
-          to={props.nextPage}
-        >
+          to={props.nextPage}>
           <button className="next_page">
             다음 페이지
             <i className="fas fa-arrow-right"></i>

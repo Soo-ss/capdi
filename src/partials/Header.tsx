@@ -15,9 +15,9 @@ const Header = () => {
     q1: "/q1",
     clock: "/clock",
     mq1: "/mq1",
-    R: "/result",
-    mR: "/mmse-result",
-    cR: "/clock-result",
+    result: "/result",
+    mmse_result: "/mmse-result",
+    clock_result: "/clock-result",
   };
 
   if (history.location.pathname === "/") {

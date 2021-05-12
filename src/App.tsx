@@ -62,9 +62,9 @@ function App() {
           <Route exact path="/" component={MenuPage} />
           <Route exact path="/clock" component={ClockCheck} />
           <Route exact path="/result" component={Result} />
-          <Route exact path="/mmse-result" component={MMSEResult} />
+          <Route exact path="/mmse_result" component={MMSEResult} />
           {/* <Route exact path="/shape-check" component={ShapeCheck} /> */}
-          <Route exact path="/clock-result" component={ClockResult} />
+          <Route exact path="/clock_result" component={ClockResult} />
           <Route exact path="/q1" component={Q1} />
           <Route exact path="/q2" component={Q2} />
           <Route exact path="/q3" component={Q3} />
