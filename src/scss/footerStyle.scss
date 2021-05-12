@@ -1,5 +1,5 @@
 .footer {
-  height: 70px;
+  height: 75px;
   width: 100%;
   background: #ffffffec;
   display: flex;
@@ -10,10 +10,12 @@
   bottom: 0;
   text-align: center;
   div {
+    width: 70px;
+    justify-content: space-around;
     .icon_img {
       transition: all 0.2s ease;
-      width: 25px;
-      height: 25px;
+      width: 30px;
+      height: 30px;
       filter: opacity(40%);
     }
     p {
