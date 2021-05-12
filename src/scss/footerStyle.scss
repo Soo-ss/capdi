@@ -22,14 +22,14 @@
       transition: all 0.2s ease;
       font-size: 10px;
       color: #9378ff;
-      opacity: 40%;
+      filter: opacity(40%);
     }
     &:hover {
       .icon_img {
         filter: opacity(100%);
       }
       p {
-        opacity: 100%;
+        filter: opacity(100%);
       }
     }
   }

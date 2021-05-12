@@ -1,58 +1,58 @@
-.image-upload-wrap {
-  outline: none;
-  width: 350px;
-  height: 350px;
-  background-color: #fbeeff;
-  border-radius: 15px;
-  .image_upload {
-    border: none;
-    width: 350px;
-    height: 350px;
-    object-fit: fill;
-    border-radius: 15px;
-  }
-}
+// .image-upload-wrap {
+//   outline: none;
+//   width: 350px;
+//   height: 350px;
+//   background-color: #fbeeff;
+//   border-radius: 15px;
+//   .image_upload {
+//     border: none;
+//     width: 350px;
+//     height: 350px;
+//     object-fit: fill;
+//     border-radius: 15px;
+//   }
+// }
 
-.btn_wrap {
-  label {
-    display: flex;
-    width: 350px;
-    height: 56px;
-    margin: 40px 0px 0px 0px;
-    justify-content: space-between;
-    align-items: center;
-    color: #99879d;
-    background-color: #fbeeff;
-    cursor: pointer;
-    border-radius: 15px;
-    -webkit-transition: background-color 0.2s;
-    transition: background-color 0.2s;
+// .btn_wrap {
+//   label {
+//     display: flex;
+//     width: 350px;
+//     height: 56px;
+//     margin: 40px 0px 0px 0px;
+//     justify-content: space-between;
+//     align-items: center;
+//     color: #99879d;
+//     background-color: #fbeeff;
+//     cursor: pointer;
+//     border-radius: 15px;
+//     -webkit-transition: background-color 0.2s;
+//     transition: background-color 0.2s;
 
-    p {
-      margin-left: 20px;
-    }
+//     p {
+//       margin-left: 20px;
+//     }
 
-    img {
-      margin-right: 20px;
-      width: 25px;
-      height: 25px;
-    }
-  }
+//     img {
+//       margin-right: 20px;
+//       width: 25px;
+//       height: 25px;
+//     }
+//   }
 
-  label:hover {
-    background: #fae9ff;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
+//   label:hover {
+//     background: #fae9ff;
+//     transition: all 0.2s ease;
+//     cursor: pointer;
+//   }
 
-  input[type="file"] {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
-}
+//   input[type="file"] {
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     padding: 0;
+//     margin: -1px;
+//     overflow: hidden;
+//     clip: rect(0, 0, 0, 0);
+//     border: 0;
+//   }
+// }
