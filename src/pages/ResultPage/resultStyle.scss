@@ -1,42 +1,48 @@
 .return_test {
-    position: relative;
-    margin: 50px 110px;
+  margin: 10% 30%;
+  .submit_btn {
+    margin: 20px auto;
     cursor: pointer;
-    font-size: 15px;
-    border: solid 2px transparent;
-    border-radius: 30px;
-    padding : 10px;
-    color: white;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    color: #ffffff;
     background-color: #9378ff;
+    font-size: 15px;
+    border-radius: 30px;
     &:hover {
-        transition: all 200ms ease-in;
-        background: #8d70ff;
+      background: #8d70ff;
+      transition: all 0.2s ease;
     }
+  }
+}
+
+.outer {
+  text-align: center;
 }
 
 .result_score {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
-
-.result_description {
-    font-size: 15px;
-    text-align:center;
-}
-
 .result_description2 {
-    background-color: #fae9ff;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  background-color: #fae9ff;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  margin: auto 2%;
+  .result_description {
+    margin: 10% 3%;
+    cursor: pointer;
     width: 100%;
-    height: 135px;
-    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+  }
 }
 
 .check_result {
-    text-align: center;
-    font-size: 40px;
-    padding-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 50px;
 }

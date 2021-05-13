@@ -50,15 +50,12 @@ const Survey = (props: IProps) => {
         );
       })}
       {Checked === -1 ? (
-        <p className= "check_alert">
-          반드시 체크해주세요!!
-        </p>
+        <p className="check_alert">반드시 체크해주세요!!</p>
       ) : (
         <Link
           style={{ padding: "10px", fontSize: "20px" }}
           onClick={() => onCalcScore(Checked)}
-          to={props.nextPage}
-        >
+          to={props.nextPage}>
           <button className="next_page">
             다음 페이지
             <i className="fas fa-arrow-right"></i>

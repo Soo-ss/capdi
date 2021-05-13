@@ -24,8 +24,6 @@
 }
 
 .btn_wrap {
-  // display: flex;
-  // justify-content: center;
   label {
     display: flex;
     margin: 20px auto;
@@ -67,32 +65,4 @@
     clip: rect(0, 0, 0, 0);
     border: 0;
   }
-}
-
-.submit_wrap {
-  width: 250px;
-  height: 54px;
-  margin: 30px auto;
-  .submit_btn {
-    width: 250px;
-    height: 54px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    background-color: #9378ff;
-    font-size: 16px;
-    border-radius: 30px;
-    -webkit-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-  }
-  .submit_btn:hover {
-    background: #8d70ff;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-}
-
-.outer {
-  text-align: center;
 }

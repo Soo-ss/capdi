@@ -32,14 +32,13 @@ const MMSESurvey = (props: IProps) => {
         <p className="check_alert">반드시 입력해주세요!!</p>
       ) : (
         <Link
-          style={{ padding: "10px", fontSize: "20px" }}
+          style={{ padding: "10px auto", fontSize: "20px" }}
           onClick={
             CheckAnswer === date.getFullYear().toString()
               ? () => onMMSECalcScore(1)
               : () => onMMSECalcScore(0)
           }
-          to={props.nextPage}
-        >
+          to={props.nextPage}>
           <button className="next_page">
             다음 페이지
             <i className="fas fa-arrow-right"></i>
