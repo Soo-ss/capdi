@@ -45,6 +45,12 @@ figcaption {
   margin: 0;
   padding: 0;
 }
+body {
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 
 /* a 링크 초기화 */
 a {
