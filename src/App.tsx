@@ -7,6 +7,8 @@ import Result from "./pages/ResultPage/Result";
 import ShapeCheck from "./pages/ShapeCheck/ShapeCheck";
 import MMSEResult from "./pages/ResultPage/MMSEResult";
 import ClockResult from "./pages/ResultPage/ClockResult";
+import Preventive from "./pages/Preventive/Preventive";
+import Preventive2 from "./pages/Preventive/Preventive2";
 
 import Q1 from "./pages/ListCheck/Surveys/Q1";
 import Q2 from "./pages/ListCheck/Surveys/Q2";
@@ -65,6 +67,8 @@ function App() {
           {/* <Route exact path="/shape-check" component={ShapeCheck} /> */}
           <Route exact path="/clock_result" component={ClockResult} />
           <Route exact path="/userInput" component={userInput} />
+          <Route exact path="/Preventive" component={Preventive} />
+          <Route exact path="/Preventive2" component={Preventive2} />
           <Route exact path="/q1" component={Q1} />
           <Route exact path="/q2" component={Q2} />
           <Route exact path="/q3" component={Q3} />

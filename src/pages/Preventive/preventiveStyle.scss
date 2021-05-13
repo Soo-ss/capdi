@@ -1,0 +1,30 @@
+.preventive_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.preventive_list {
+    margin-bottom: 30px;
+}
+
+.preventive_sub {
+    background-color:  #fae9ff;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.next_preventive_page {
+    position: relative;
+    margin: 35px 120px;
+    cursor: pointer;
+    font-size: 15px;
+    border: solid 2px transparent;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    background-color: #9378ff;
+    &:hover {
+        transition: all 200ms ease-in;
+        background: #8d70ff;
+    }
+}

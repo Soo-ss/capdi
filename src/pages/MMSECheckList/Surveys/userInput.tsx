@@ -44,10 +44,6 @@ const userInput = ()=> {
                         <label><input type="radio" name="education" value="13"/>13년 이상</label>
                     </div>
                 </div>
-
-
-
-
             <Link to="/mq1">
                 <div className="go_MMSE">
                     MMSE검사 시작하기
