@@ -8,7 +8,7 @@ const userInput = ()=> {
         <Layout>
                 <h1 className="notice_title">{"< "}주의사항{" >"}</h1>
                 <div className="MMSE_notice">
-                    <ul className ="notcie_list">
+                    <ul id ="notcie_list">
                         <li>1. 보호자가 반드시 필요합니다.</li>
                         <li>2. 검사자의 학력, 성별, 나이에 따라 검사기준이 달라지므로 정확히 입력해주시기 바랍니다.</li>
                         <li>3. 우울증이 심할 경우 결과가 정확하지 않을 수 있습니다. </li>
