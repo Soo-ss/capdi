@@ -10,17 +10,8 @@ interface IProps {
 }
 
 const MMSESurvey = (props: IProps) => {
-  const lists = [
-    {
-      caseName: "틀림",
-      caseScore: 0,
-    },
-    {
-      caseName: "맞음",
-      caseScore: 1,
-    },
-  ];
-  const [Checked, setChecked] = useState(-1);
+  let date = new Date();
+  const [CheckAnswer, setCheckAnswer] = useState("");
   const { onMMSECalcScore } = useCalcScore();
 
   return (
@@ -33,28 +24,22 @@ const MMSESurvey = (props: IProps) => {
         <input
           className="answer-input"
           placeholder="정답을 입력해 주세요."
-          type="search"></input>
+          type="search"
+          onChange={(e) => setCheckAnswer(e.target.value)}
+        />
       </div>
-      <br />
-      {lists.map((item, index) => {
-        return (
-          <div key={index} className="questions">
-            <input
-              type="radio"
-              name="score"
-              onChange={() => setChecked(item.caseScore)}
-            />
-            {item.caseName}
-          </div>
-        );
-      })}
-      {Checked === -1 ? (
-        <p className="check_alert">반드시 체크해주세요!!</p>
+      {CheckAnswer === "" ? (
+        <p className="check_alert">반드시 입력해주세요!!</p>
       ) : (
         <Link
           style={{ padding: "10px", fontSize: "20px" }}
-          onClick={() => onMMSECalcScore(Checked)}
-          to={props.nextPage}>
+          onClick={
+            CheckAnswer === date.getFullYear().toString()
+              ? () => onMMSECalcScore(1)
+              : () => onMMSECalcScore(0)
+          }
+          to={props.nextPage}
+        >
           <button className="next_page">
             다음 페이지
             <i className="fas fa-arrow-right"></i>
