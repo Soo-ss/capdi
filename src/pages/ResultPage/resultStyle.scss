@@ -1,11 +1,12 @@
 .return_test {
-  margin: 10% 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px auto;
   .submit_btn {
-    margin: 20px auto;
     cursor: pointer;
-    width: 100%;
+    width: 160px;
     padding: 10px;
-    justify-content: center;
     color: #ffffff;
     background-color: #9378ff;
     font-size: 15px;
@@ -34,7 +35,6 @@
   margin: auto 2%;
   .result_description {
     margin: 10% 3%;
-    cursor: pointer;
     width: 100%;
     font-size: 15px;
     text-align: center;

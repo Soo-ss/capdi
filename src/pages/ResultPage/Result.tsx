@@ -12,7 +12,8 @@ const Result = () => {
       return (
         <p className="result_description">
           다양한 우울증상으로 일상생활에 영향을 주고 있는 상태입니다. 이러한
-          상태가 2주 이상 지속된다면 전문가와의 상담을 반드시 받아보세요.
+          상태가 2주 이상 지속된다면 전문가와의 상담을 반드시 받아보세요. 치매
+          검사 결과의 정확성을 위해 치매 검사를 지양합니다.
         </p>
       );
     } else if (score <= 24 && score >= 16) {
@@ -33,18 +34,36 @@ const Result = () => {
     }
   };
 
-  return (
-    <Layout>
-      <h1 className="check_result">검사 결과</h1>
-      <h1 className="result_score">합산 점수 : {score}점 </h1>
-      <div className="result_description2">{renderDepressionResult()}</div>
-      <div className="return_test">
-        <Link to="/q1">
-          <button className="submit_btn">다시 테스트하기</button>
-        </Link>
-      </div>
-    </Layout>
-  );
+  if (score > 25) {
+    return (
+      <Layout>
+        <h1 className="check_result">검사 결과</h1>
+        <h1 className="result_score">합산 점수 : {score}점 </h1>
+        <div className="result_description2">{renderDepressionResult()}</div>
+        <div className="return_test">
+          <Link to="/q1">
+            <button className="submit_btn">다시 테스트하기</button>
+          </Link>
+        </div>
+      </Layout>
+    );
+  } else {
+    return (
+      <Layout>
+        <h1 className="check_result">검사 결과</h1>
+        <h1 className="result_score">합산 점수 : {score}점 </h1>
+        <div className="result_description2">{renderDepressionResult()}</div>
+        <div className="return_test">
+          <Link to="/q1">
+            <button className="submit_btn">다시 테스트하기</button>
+          </Link>
+          <Link to="/userInput">
+            <button className="submit_btn">MMSE 치매 검사하기</button>
+          </Link>
+        </div>
+      </Layout>
+    );
+  }
 };
 
 export default Result;
