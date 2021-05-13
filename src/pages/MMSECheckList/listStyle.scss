@@ -33,20 +33,38 @@
   background-color: #9378ff;
   padding: 10px;
   position: relative;
-  margin-left: 50px;
+  margin: 30px 50px;
   &:hover {
     background-color: #8d70ff;
     transition: all 200ms ease;
   }
 }
+
 .notice_title {
   text-align: center;
 }
 
+.answer_btn {
+  display: flex;
+  justify-content: space-around;
+}
+
 .MMSE_notice {
   padding: 20px;
+  margin-bottom: 15px;
   width: 100%;
   border-radius: 10px;
   background-color: #fae9ff;
   font-size: 15px;
+  font-weight:400;
+}
+
+.input_question {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.MMSE_input {
+  padding: 15px;
 }
