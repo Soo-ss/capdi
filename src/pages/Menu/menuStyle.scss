@@ -31,11 +31,11 @@
 }
 
 .discription {
-  font-size: 5px;
+  font-size: 12px;
   color: #cfcdd4;
 }
 
-.mmse__button {
+.depression__button {
   color: gray;
   cursor: pointer;
   position: absolute;
@@ -45,21 +45,21 @@
   background-color: transparent;
 }
 
-.clock__button {
+.mmse__button {
   color: gray;
   cursor: pointer;
   position: absolute;
-  top: 275px;
+  top: 282px;
   left: 300px;
   font-size: 50px;
   background-color: transparent;
 }
 
-.depression__button {
+.clock__button {
   color: gray;
   cursor: pointer;
   position: absolute;
-  top: 455px;
+  top: 469px;
   left: 300px;
   font-size: 50px;
   background-color: transparent;
@@ -69,29 +69,26 @@
   font-size: 20px;
   background-color: #f8f5ff;
   padding: 60px;
+  &:hover {
+    transition: background-color 300ms linear;
+    background-color: #e9e2f8f5;
+  }
 }
 
 .clock {
   padding: 60px;
   font-size: 20px;
+  &:hover {
+    transition: background-color 300ms linear;
+    background-color: #e9e2f8f5;
+  }
 }
 
 .depression {
   padding: 60px;
   font-size: 20px;
-}
-
-.mmse:hover {
-  transition: background-color 300ms linear;
-  background-color: #e9e2f8f5;
-}
-
-.clock:hover {
-  transition: background-color 300ms linear;
-  background-color: #e9e2f8f5;
-}
-
-.depression:hover {
-  transition: background-color 300ms linear;
-  background-color: #e9e2f8f5;
+  &:hover {
+    transition: background-color 300ms linear;
+    background-color: #e9e2f8f5;
+  }
 }
