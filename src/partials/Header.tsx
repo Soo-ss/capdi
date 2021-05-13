@@ -18,6 +18,7 @@ const Header = () => {
     result: "/result",
     mmse_result: "/mmse-result",
     clock_result: "/clock-result",
+    userInput: "/userInput",
   };
 
   if (history.location.pathname === "/") {
