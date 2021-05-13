@@ -52,8 +52,6 @@ import MQ14And2 from "./pages/MMSECheckList/Surveys/MQ14-2";
 import MQ15 from "./pages/MMSECheckList/Surveys/MQ15";
 import MQ16 from "./pages/MMSECheckList/Surveys/MQ16";
 import MQ17 from "./pages/MMSECheckList/Surveys/MQ17";
-import MQ18 from "./pages/MMSECheckList/Surveys/MQ18";
-import MQ19 from "./pages/MMSECheckList/Surveys/MQ19";
 
 function App() {
   return (
@@ -109,8 +107,6 @@ function App() {
           <Route exact path="/mq15" component={MQ15} />
           <Route exact path="/mq16" component={MQ16} />
           <Route exact path="/mq17" component={MQ17} />
-          <Route exact path="/mq18" component={MQ18} />
-          <Route exact path="/mq19" component={MQ19} />
         </Switch>
       </Router>
     </>
