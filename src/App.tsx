@@ -9,6 +9,7 @@ import MMSEResult from "./pages/ResultPage/MMSEResult";
 import ClockResult from "./pages/ResultPage/ClockResult";
 import Preventive from "./pages/Preventive/Preventive";
 import Preventive2 from "./pages/Preventive/Preventive2";
+import Preventive3 from "./pages/Preventive/Preventive3";
 
 import Q1 from "./pages/ListCheck/Surveys/Q1";
 import Q2 from "./pages/ListCheck/Surveys/Q2";
@@ -69,6 +70,7 @@ function App() {
           <Route exact path="/userInput" component={userInput} />
           <Route exact path="/Preventive" component={Preventive} />
           <Route exact path="/Preventive2" component={Preventive2} />
+          <Route exact path="/Preventive3" component={Preventive3} />
           <Route exact path="/q1" component={Q1} />
           <Route exact path="/q2" component={Q2} />
           <Route exact path="/q3" component={Q3} />

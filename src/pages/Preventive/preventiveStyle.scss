@@ -14,8 +14,24 @@
 }
 
 .next_preventive_page {
-    position: relative;
-    margin: 35px 120px;
+    position: absolute;
+    margin: 35px 250px;
+    cursor: pointer;
+    font-size: 15px;
+    border: solid 2px transparent;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    background-color: #9378ff;
+    &:hover {
+        transition: all 200ms ease-in;
+        background: #8d70ff;
+    }
+}
+
+.previous_preventive_page {
+    position: absolute;
+    margin: 35px 0px;
     cursor: pointer;
     font-size: 15px;
     border: solid 2px transparent;

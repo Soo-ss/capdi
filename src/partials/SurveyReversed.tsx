@@ -60,7 +60,7 @@ const SurveyReversed = (props: IProps) => {
           to={props.nextPage}
         >
           <button className="next_page">
-            다음 페이지
+            다음 페이지{" "}
             <i className="fas fa-arrow-right"></i>
           </button>
         </Link>

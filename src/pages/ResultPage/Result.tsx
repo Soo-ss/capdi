@@ -7,8 +7,9 @@ import "./resultStyle.scss";
 const Result = () => {
   const { score } = useCalcScore();
 
+  
   const renderDepressionResult = () => {
-    if (score > 25) {
+    if (score >= 25) {
       return (
         <p className="result_description">
           다양한 우울증상으로 일상생활에 영향을 주고 있는 상태입니다. 이러한
