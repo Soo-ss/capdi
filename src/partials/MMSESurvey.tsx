@@ -11,6 +11,7 @@ interface IProps {
 }
 
 const MMSESurvey = (props: IProps) => {
+  // QuestionLists.ts에 답 여러개 적어야함. 그리고 if(~~~ in lists){}
   const [CheckAnswer, setCheckAnswer] = useState("");
   const { onMMSECalcScore } = useCalcScore();
 
