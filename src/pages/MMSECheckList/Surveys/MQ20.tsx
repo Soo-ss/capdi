@@ -9,12 +9,22 @@ import { Link } from "react-router-dom";
 import MMSESurveyThree from "../../../partials/MMSESurveyThree";
 import { lists } from "../QuestionLists";
 import pentagon from "./img/pentagon.png";
+//@ts-ignore
+import m20 from "../../../audios/m20.mp3";
+import useCalcScore from "../../../redux/hooks/useCalcScore";
 
 const MQ20 = () => {
+  const [audio] = useState(new Audio(m20));
+
+  useEffect(() => {
+    audio.play();
+  }, []);
+
   // 이미지 업로드 정의
   const [Picture, setPicture] = useState<any>(null);
   const [ImageData, setImageData] = useState<any>(background);
   const [PentagonGood, setPentagonGood] = useState(-1);
+  const { onMMSECalcScore } = useCalcScore();
 
   const onChangePicture = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (!event.target.files) {
@@ -95,6 +105,23 @@ const MQ20 = () => {
         />
       </div>
       {renderResult()}
+      {PentagonGood === -1 ? (
+        <p className="check_alert">반드시 그려주세요!!</p>
+      ) : (
+        <Link
+          style={{ padding: "10px auto", fontSize: "20px" }}
+          onClick={
+            PentagonGood >= 80
+              ? () => onMMSECalcScore(1)
+              : () => onMMSECalcScore(0)
+          }
+          to={lists[20].nextPage}
+        >
+          <button className="next_page">
+            다음 페이지 <i className="fas fa-arrow-right"></i>
+          </button>
+        </Link>
+      )}
     </Layout>
   );
 };

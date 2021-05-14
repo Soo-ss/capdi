@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../../../partials/Layout";
 import MMSESurvey from "../../../partials/MMSESurvey";
 import { lists } from "../QuestionLists";
+//@ts-ignore
+import m5 from "../../../audios/m5.mp3";
 
 const MQ5 = () => {
+  const [audio] = useState(new Audio(m5));
+
+  useEffect(() => {
+    audio.play();
+  }, []);
+
   return (
     <Layout>
       <MMSESurvey

@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../../../partials/Layout";
 import MMSESurvey from "../../../partials/MMSESurvey";
 import { lists } from "../QuestionLists";
+//@ts-ignore
+import m14 from "../../../audios/m14.mp3";
 
 const MQ14 = () => {
+  const [audio] = useState(new Audio(m14));
+
+  useEffect(() => {
+    audio.play();
+  }, []);
+
   return (
     <Layout>
       <MMSESurvey
