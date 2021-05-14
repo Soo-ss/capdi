@@ -56,7 +56,7 @@ function Menu() {
             <div className="menu__discription">
               <p className="discription__title">시계그리기 검사</p>
               <p className="discription">
-                시계그리기 검사를 통해 치매를 진단할 수 있습니다.
+                시계그리기 검사를 통해 <br></br>치매를 진단할 수 있습니다.
               </p>
             </div>
           </div>
