@@ -19,24 +19,24 @@
   margin: 20px;
 }
 
-.go_MMSE {
-  cursor: pointer;
-  font-size: 20px;
-  color: white;
-  width: 250px;
-  height: 40px;
-  text-align: center;
+.start_test {
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 30px;
-  background-color: #9378ff;
-  padding: 10px;
-  position: relative;
-  margin: 25px 65px;
-  &:hover {
-    background-color: #8d70ff;
-    transition: all 200ms ease;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  .go_MMSE {
+    cursor: pointer;
+    width: 160px;
+    padding: 13px;
+    color: #ffffff;
+    background-color: #9378ff;
+    font-size: 15px;
+    border-radius: 30px;
+    text-align: center;
+    &:hover {
+      background: #8d70ff;
+      transition: all 0.2s ease;
+    }
   }
 }
 
@@ -51,13 +51,16 @@
 }
 
 .MMSE_notice {
-  padding: 20px;
+  padding: 20px auto;
   margin-bottom: 15px;
   width: 100%;
   border-radius: 10px;
   background-color: #fae9ff;
   font-size: 15px;
-  font-weight:550;
+  font-weight: 550;
+  #notcie_list {
+    padding: 20px;
+  }
 }
 
 .input_question {
