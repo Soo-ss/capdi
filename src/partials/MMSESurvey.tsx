@@ -7,10 +7,10 @@ interface IProps {
   listNumber: string;
   title: string;
   nextPage: string;
+  answer: string;
 }
 
 const MMSESurvey = (props: IProps) => {
-  let date = new Date();
   const [CheckAnswer, setCheckAnswer] = useState("");
   const { onMMSECalcScore } = useCalcScore();
 
@@ -34,14 +34,14 @@ const MMSESurvey = (props: IProps) => {
         <Link
           style={{ padding: "10px auto", fontSize: "20px" }}
           onClick={
-            CheckAnswer === date.getFullYear().toString()
+            CheckAnswer === props.answer
               ? () => onMMSECalcScore(1)
               : () => onMMSECalcScore(0)
           }
-          to={props.nextPage}>
+          to={props.nextPage}
+        >
           <button className="next_page">
-            다음 페이지{" "}
-            <i className="fas fa-arrow-right"></i>
+            다음 페이지 <i className="fas fa-arrow-right"></i>
           </button>
         </Link>
       )}

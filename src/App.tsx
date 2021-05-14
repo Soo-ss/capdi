@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ClockCheck from "./pages/ClockCheck/ClockCheck";
 import MenuPage from "./pages/Menu/Menu";
 import Result from "./pages/ResultPage/Result";
-import ShapeCheck from "./pages/ShapeCheck/ShapeCheck";
 import MMSEResult from "./pages/ResultPage/MMSEResult";
 import ClockResult from "./pages/ResultPage/ClockResult";
 import Preventive from "./pages/Preventive/Preventive";
@@ -44,17 +43,17 @@ import MQ8 from "./pages/MMSECheckList/Surveys/MQ8";
 import MQ9 from "./pages/MMSECheckList/Surveys/MQ9";
 import MQ10 from "./pages/MMSECheckList/Surveys/MQ10";
 import MQ11 from "./pages/MMSECheckList/Surveys/MQ11";
-import MQ12And1 from "./pages/MMSECheckList/Surveys/MQ12-1";
-import MQ12And2 from "./pages/MMSECheckList/Surveys/MQ12-2";
-import MQ12And3 from "./pages/MMSECheckList/Surveys/MQ12-3";
-import MQ12And4 from "./pages/MMSECheckList/Surveys/MQ12-4";
-import MQ12And5 from "./pages/MMSECheckList/Surveys/MQ12-5";
+import MQ12 from "./pages/MMSECheckList/Surveys/MQ12";
 import MQ13 from "./pages/MMSECheckList/Surveys/MQ13";
-import MQ14And1 from "./pages/MMSECheckList/Surveys/MQ14-1";
-import MQ14And2 from "./pages/MMSECheckList/Surveys/MQ14-2";
+import MQ14 from "./pages/MMSECheckList/Surveys/MQ14";
 import MQ15 from "./pages/MMSECheckList/Surveys/MQ15";
 import MQ16 from "./pages/MMSECheckList/Surveys/MQ16";
 import MQ17 from "./pages/MMSECheckList/Surveys/MQ17";
+import MQ18 from "./pages/MMSECheckList/Surveys/MQ18";
+import MQ19 from "./pages/MMSECheckList/Surveys/MQ19";
+import MQ20 from "./pages/MMSECheckList/Surveys/MQ20";
+import MQ21 from "./pages/MMSECheckList/Surveys/MQ21";
+import MQ22 from "./pages/MMSECheckList/Surveys/MQ22";
 
 function App() {
   return (
@@ -65,7 +64,6 @@ function App() {
           <Route exact path="/clock" component={ClockCheck} />
           <Route exact path="/result" component={Result} />
           <Route exact path="/mmse_result" component={MMSEResult} />
-          {/* <Route exact path="/shape-check" component={ShapeCheck} /> */}
           <Route exact path="/clock_result" component={ClockResult} />
           <Route exact path="/userInput" component={userInput} />
           <Route exact path="/preventive" component={Preventive} />
@@ -102,17 +100,17 @@ function App() {
           <Route exact path="/mq9" component={MQ9} />
           <Route exact path="/mq10" component={MQ10} />
           <Route exact path="/mq11" component={MQ11} />
-          <Route exact path="/mq12-1" component={MQ12And1} />
-          <Route exact path="/mq12-2" component={MQ12And2} />
-          <Route exact path="/mq12-3" component={MQ12And3} />
-          <Route exact path="/mq12-4" component={MQ12And4} />
-          <Route exact path="/mq12-5" component={MQ12And5} />
+          <Route exact path="/mq12" component={MQ12} />
           <Route exact path="/mq13" component={MQ13} />
-          <Route exact path="/mq14-1" component={MQ14And1} />
-          <Route exact path="/mq14-2" component={MQ14And2} />
+          <Route exact path="/mq14" component={MQ14} />
           <Route exact path="/mq15" component={MQ15} />
           <Route exact path="/mq16" component={MQ16} />
           <Route exact path="/mq17" component={MQ17} />
+          <Route exact path="/mq18" component={MQ18} />
+          <Route exact path="/mq19" component={MQ19} />
+          <Route exact path="/mq20" component={MQ20} />
+          <Route exact path="/mq21" component={MQ21} />
+          <Route exact path="/mq22" component={MQ22} />
         </Switch>
       </Router>
     </>
