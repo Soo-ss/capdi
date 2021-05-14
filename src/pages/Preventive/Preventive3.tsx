@@ -23,7 +23,7 @@ const Preventive3 = () => {
 
             <div className="preventive_list">
                 <h2 className="preventive_sub">
-                    <i className="fas fa-smoking-ban"></i> {" "}
+                <i className="far fa-hospital"></i> {" "}
                     정기적인 건강검진을 받습니다.
                 </h2>
                 <p className="preventive_description">
