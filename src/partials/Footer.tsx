@@ -5,12 +5,14 @@ import clock from "./img/clock.png";
 import preventive from "./img/preventive.png";
 import depression from "./img/depression.png";
 import home from "./img/home.png";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
+import useCalcScore from "../redux/hooks/useCalcScore";
 
 const Footer = () => {
+  const { onResetScore, onResetMMSEScore } = useCalcScore();
   return (
     <div className="footer">
-      <Link to="/userInput">
+      <Link to="/userInput" onClick={() => onResetMMSEScore()}>
         <div>
           <img src={exam} alt="mmse test" className="icon_img" />
           <p>MMSE 검사</p>
@@ -28,7 +30,7 @@ const Footer = () => {
           <p>메뉴</p>
         </div>
       </Link>
-      <Link to="/q1">
+      <Link to="/q1" onClick={() => onResetScore()}>
         <div>
           <img src={depression} alt="depression" className="icon_img" />
           <p>우울증 검사</p>
