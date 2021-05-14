@@ -11,10 +11,10 @@ import { Link } from "react-router-dom";
 function Menu() {
   return (
     <Layout>
+
       <div className="menu__bar">
         <i className="fas fa-bars"></i>
       </div>
-
       <Link to="/q1">
         <div className="depression">
           <div className="depression__menu">
@@ -22,7 +22,7 @@ function Menu() {
             <div className="menu__discription">
               <p className="discription__title">우울증 검사</p>
               <p className="discription">
-                치매 검사를 하기 전에 우울증 테스트부터 먼저 해보세요.
+                치매 검사를 하기 전 <br></br>우울증 테스트부터 먼저 해보세요.
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ function Menu() {
             <div className="menu__discription">
               <p className="discription__title">MMSE 검사</p>
               <p className="discription">
-                설문 형식의 테스트로, 5분만에 치매를 진단할 수 있습니다.
+                설문 형식의 테스트로, <br></br>5분만에 치매를 진단할 수 있습니다.
               </p>
             </div>
           </div>
