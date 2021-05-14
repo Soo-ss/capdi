@@ -68,9 +68,9 @@ function App() {
           {/* <Route exact path="/shape-check" component={ShapeCheck} /> */}
           <Route exact path="/clock_result" component={ClockResult} />
           <Route exact path="/userInput" component={userInput} />
-          <Route exact path="/Preventive" component={Preventive} />
-          <Route exact path="/Preventive2" component={Preventive2} />
-          <Route exact path="/Preventive3" component={Preventive3} />
+          <Route exact path="/preventive" component={Preventive} />
+          <Route exact path="/preventive2" component={Preventive2} />
+          <Route exact path="/preventive3" component={Preventive3} />
           <Route exact path="/q1" component={Q1} />
           <Route exact path="/q2" component={Q2} />
           <Route exact path="/q3" component={Q3} />
