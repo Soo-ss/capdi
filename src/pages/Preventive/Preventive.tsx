@@ -46,7 +46,7 @@ const Preventive = () => {
             </div>
             <Link to="/Preventive2">
                 <button className="next_preventive_page">
-                    다음 페이지
+                    다음 페이지{" "}
                     <i className="fas fa-arrow-right"></i>
                 </button>
             </Link>

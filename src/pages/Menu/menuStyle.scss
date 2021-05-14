@@ -10,6 +10,17 @@
   height: 60px;
 }
 
+.appIcon__img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+.depression__menu {
+  display: flex;
+  align-items: center;
+}
+
 .mmse__menu {
   display: flex;
   align-items: center;
@@ -20,7 +31,7 @@
   align-items: center;
 }
 
-.depression__menu {
+.preventive__menu {
   display: flex;
   align-items: center;
 }
@@ -39,8 +50,8 @@
   color: gray;
   cursor: pointer;
   position: absolute;
-  top: 95px;
-  left: 300px;
+  top: 80px;
+  left: 320px;
   font-size: 50px;
   background-color: transparent;
 }
@@ -49,8 +60,8 @@
   color: gray;
   cursor: pointer;
   position: absolute;
-  top: 282px;
-  left: 300px;
+  top: 225px;
+  left: 320px;
   font-size: 50px;
   background-color: transparent;
 }
@@ -59,16 +70,37 @@
   color: gray;
   cursor: pointer;
   position: absolute;
-  top: 469px;
-  left: 300px;
+  top: 370px;
+  left: 320px;
   font-size: 50px;
   background-color: transparent;
+}
+
+.preventive__button {
+  color: gray;
+  cursor: pointer;
+  position: absolute;
+  top: 515px;
+  left: 320px;
+  font-size: 50px;
+  background-color: transparent;
+}
+
+
+
+.depression {
+  padding: 40px;
+  font-size: 20px;
+  &:hover {
+    transition: background-color 300ms linear;
+    background-color: #e9e2f8f5;
+  }
 }
 
 .mmse {
   font-size: 20px;
   background-color: #f8f5ff;
-  padding: 60px;
+  padding: 40px;
   &:hover {
     transition: background-color 300ms linear;
     background-color: #e9e2f8f5;
@@ -76,7 +108,7 @@
 }
 
 .clock {
-  padding: 60px;
+  padding: 40px;
   font-size: 20px;
   &:hover {
     transition: background-color 300ms linear;
@@ -84,9 +116,10 @@
   }
 }
 
-.depression {
-  padding: 60px;
+.preventive {
   font-size: 20px;
+  background-color: #f8f5ff;
+  padding: 40px;
   &:hover {
     transition: background-color 300ms linear;
     background-color: #e9e2f8f5;
