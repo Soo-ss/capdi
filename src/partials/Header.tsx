@@ -2,7 +2,6 @@ import React from "react";
 import back from "./img/back.png";
 import "../scss/headerStyle.scss";
 import { useHistory, Link } from "react-router-dom";
-import { isElementAccessExpression } from "typescript";
 
 const Header = () => {
   const history = useHistory();

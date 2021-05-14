@@ -10,6 +10,7 @@ const MQ4 = () => {
         listNumber={lists[4].listNumber}
         title={lists[4].title}
         nextPage={lists[4].nextPage}
+        answer={lists[4].answer}
       />
     </Layout>
   );

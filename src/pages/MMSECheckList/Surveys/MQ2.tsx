@@ -10,6 +10,7 @@ const MQ2 = () => {
         listNumber={lists[2].listNumber}
         title={lists[2].title}
         nextPage={lists[2].nextPage}
+        answer={lists[2].answer}
       />
     </Layout>
   );

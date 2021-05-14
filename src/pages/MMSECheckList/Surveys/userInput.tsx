@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Layout from "../../../partials/Layout";
 import "../listStyle.scss";
 
-const userInput = () => {
+const UserInput = () => {
   return (
     <Layout>
       <h1 className="notice_title">
@@ -90,4 +90,4 @@ const userInput = () => {
   );
 };
 
-export default userInput;
+export default UserInput;
