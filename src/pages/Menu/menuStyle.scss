@@ -1,7 +1,7 @@
 .menu__bar {
   font-size: 30px;
   margin-left: 15px;
-  width: 100%;
+  
 }
 
 .logo__img {
@@ -51,7 +51,7 @@
   cursor: pointer;
   position: absolute;
   top: 80px;
-  left: 390px;
+  left: 320px;
   font-size: 50px;
   background-color: transparent;
 }
@@ -61,7 +61,7 @@
   cursor: pointer;
   position: absolute;
   top: 225px;
-  left: 390px;
+  left: 320px;
   font-size: 50px;
   background-color: transparent;
 }
@@ -71,7 +71,7 @@
   cursor: pointer;
   position: absolute;
   top: 370px;
-  left: 390px;
+  left: 320px;
   font-size: 50px;
   background-color: transparent;
 }
@@ -81,7 +81,7 @@
   cursor: pointer;
   position: absolute;
   top: 515px;
-  left: 390px;
+  left: 320px;
   font-size: 50px;
   background-color: transparent;
 }
@@ -91,7 +91,6 @@
 .depression {
   padding: 40px;
   font-size: 20px;
-  width: 100%;
   &:hover {
     transition: background-color 300ms linear;
     background-color: #e9e2f8f5;
@@ -102,7 +101,6 @@
   font-size: 20px;
   background-color: #f8f5ff;
   padding: 40px;
-  width: 100%;
   &:hover {
     transition: background-color 300ms linear;
     background-color: #e9e2f8f5;
@@ -112,7 +110,6 @@
 .clock {
   padding: 40px;
   font-size: 20px;
-  width: 100%;
   &:hover {
     transition: background-color 300ms linear;
     background-color: #e9e2f8f5;
@@ -123,7 +120,6 @@
   font-size: 20px;
   background-color: #f8f5ff;
   padding: 40px;
-  width: 100%;
   &:hover {
     transition: background-color 300ms linear;
     background-color: #e9e2f8f5;
