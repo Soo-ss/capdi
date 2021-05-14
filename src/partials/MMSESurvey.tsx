@@ -34,7 +34,8 @@ const MMSESurvey = (props: IProps) => {
         <Link
           style={{ padding: "10px auto", fontSize: "20px" }}
           onClick={
-            CheckAnswer === props.answer
+            // 특정 문자 포함하는거 체크하기
+            CheckAnswer.includes(props.answer)
               ? () => onMMSECalcScore(1)
               : () => onMMSECalcScore(0)
           }
