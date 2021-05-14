@@ -14,11 +14,11 @@ const Header = () => {
   var lists = {
     q1: "/q1",
     clock: "/clock",
-    mq1: "/mq1",
     result: "/result",
-    mmse_result: "/mmse-result",
-    clock_result: "/clock-result",
+    mmse_result: "/mmse_result",
+    clock_result: "/clock_result",
     userInput: "/userInput",
+    preventive: "/preventive",
   };
 
   if (history.location.pathname === "/") {
