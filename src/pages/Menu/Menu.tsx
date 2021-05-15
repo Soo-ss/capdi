@@ -14,7 +14,8 @@ function Menu() {
   return (
     <Layout>
       <div className="menu__bar">
-        <i className="fas fa-bars"></i>
+      <img src={appIcon} alt="mypic" className="appIcon__img" />
+      저리가! 치매
       </div>
       <Link to="/q1" onClick={() => onResetScore()}>
         <div className="depression">
