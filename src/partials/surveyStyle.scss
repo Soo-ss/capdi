@@ -1,16 +1,20 @@
-.next_page {
-  position: relative;
-  margin: 50px 100px;
-  cursor: pointer;
-  font-size: 15px;
-  border: solid 2px transparent;
-  border-radius: 30px;
-  padding: 10px;
-  color: white;
-  background-color: #9378ff;
-  &:hover {
-    transition: all 200ms ease-in;
-    background: #8d70ff;
+.next_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  .next_page {
+    cursor: pointer;
+    width: 160px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #9378ff;
+    font-size: 15px;
+    border-radius: 30px;
+    &:hover {
+      background: #8d70ff;
+      transition: all 0.2s ease;
+    }
   }
 }
 
@@ -54,9 +58,4 @@
     justify-content: center;
     border-style: solid;
   }
-}
-
-.pentagon__img {
-  width: 300px;
-  margin-left: 30px;
 }

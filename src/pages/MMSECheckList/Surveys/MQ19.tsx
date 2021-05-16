@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Layout from "../../../partials/Layout";
 import MMSESurvey from "../../../partials/MMSESurvey";
 import { lists } from "../QuestionLists";
+import pencil from "./img/pencil_img.png";
 //@ts-ignore
 import m19 from "../../../audios/m19.mp3";
 
@@ -14,6 +15,9 @@ const MQ19 = () => {
 
   return (
     <Layout>
+      <div className="pImg_wrap">
+        <img src={pencil} alt="mypic" className="pentagon__img" />
+      </div>
       <MMSESurvey
         listNumber={lists[19].listNumber}
         title={lists[19].title}

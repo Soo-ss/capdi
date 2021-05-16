@@ -73,7 +73,19 @@
   padding: 10px;
 }
 
-.pentagon__img {
-  width: 100px;
-  height: 100px;
+.Question_mq {
+  text-align: center;
+}
+
+.pentagon_result {
+  text-align: center;
+}
+
+.pImg_wrap {
+  display: flex;
+  justify-content: center;
+  .pentagon__img {
+    width: 40%;
+    height: 40%;
+  }
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Layout from "../../../partials/Layout";
 import MMSESurvey from "../../../partials/MMSESurvey";
 import { lists } from "../QuestionLists";
+import clock from "./img/clock_img.png";
 //@ts-ignore
 import m18 from "../../../audios/m18.mp3";
 
@@ -14,6 +15,9 @@ const MQ18 = () => {
 
   return (
     <Layout>
+      <div className="pImg_wrap">
+        <img src={clock} alt="mypic" className="pentagon__img" />
+      </div>
       <MMSESurvey
         listNumber={lists[18].listNumber}
         title={lists[18].title}

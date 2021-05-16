@@ -3,12 +3,11 @@ import "../../../partials/surveyStyle.scss";
 import Layout from "../../../partials/Layout";
 import * as tf from "@tensorflow/tfjs";
 import * as tmImage from "@teachablemachine/image";
-import background from "../../../images/origin.png";
+import background from "./img/pentagon.png";
 import upload from "../../../images/upload.png";
 import { Link } from "react-router-dom";
 import MMSESurveyThree from "../../../partials/MMSESurveyThree";
 import { lists } from "../QuestionLists";
-import pentagon from "./img/pentagon.png";
 //@ts-ignore
 import m20 from "../../../audios/m20.mp3";
 import useCalcScore from "../../../redux/hooks/useCalcScore";
@@ -73,20 +72,23 @@ const MQ20 = () => {
   const renderResult = () => {
     // PentagonGood 80% 이상
     if (PentagonGood === -1) {
-      return <h1>이미지를 업로드 후, 3초만 기다려주세요.</h1>;
+      return (
+        <h1 className="pentagon_result">
+          이미지를 업로드 후, 3초만 기다려주세요.
+        </h1>
+      );
     } else if (PentagonGood >= 80) {
-      return <h1>정상입니다~</h1>;
+      return <h1 className="pentagon_result">정상입니다~</h1>;
     } else {
-      return <h1>치매가 의심됩니다.</h1>;
+      return <h1 className="pentagon_result">치매가 의심됩니다.</h1>;
     }
   };
 
   return (
     <Layout>
-      <img src={pentagon} alt="mypic" className="pentagon__img" />
-
-      <h2>
-        Q. 위의 그림과 같이 오각형이 겹쳐져 있는 그림이 있습니다. 이 그림을 따라
+      <div className="question-title">문항 15</div>
+      <h2 className="Question_mq">
+        Q. 아래 그림과 같이 오각형이 겹쳐져 있는 그림이 있습니다. 이 그림을 따라
         그리고 사진을 올려주세요.
       </h2>
       <div className="image-upload-wrap">
@@ -106,21 +108,22 @@ const MQ20 = () => {
       </div>
       {renderResult()}
       {PentagonGood === -1 ? (
-        <p className="check_alert">반드시 그려주세요!!</p>
+        <p className="check_alert"> </p>
       ) : (
-        <Link
-          style={{ padding: "10px auto", fontSize: "20px" }}
-          onClick={
-            PentagonGood >= 80
-              ? () => onMMSECalcScore(1)
-              : () => onMMSECalcScore(0)
-          }
-          to={lists[20].nextPage}
-        >
-          <button className="next_page">
-            다음 페이지 <i className="fas fa-arrow-right"></i>
-          </button>
-        </Link>
+        <div className="next_wrap">
+          <Link
+            style={{ padding: "10px auto", fontSize: "20px" }}
+            onClick={
+              PentagonGood >= 80
+                ? () => onMMSECalcScore(1)
+                : () => onMMSECalcScore(0)
+            }
+            to={lists[20].nextPage}>
+            <button className="next_page">
+              다음 페이지 <i className="fas fa-arrow-right"></i>
+            </button>
+          </Link>
+        </div>
       )}
     </Layout>
   );

@@ -113,20 +113,20 @@ export const lists = [
   },
   {
     listNumber: "문항 14-1",
-    title: "Q. (실제 시계를 보여주며) 이것을 무엇이라고 합니까?",
+    title: "Q. 이것을 무엇이라고 합니까?",
     nextPage: "mq19",
     answer: "시계",
   },
   {
     listNumber: "문항 14-2",
-    title: "Q. (실제 연필을 보여주며) 이것을 무엇이라고 합니까?",
+    title: "Q. 이것을 무엇이라고 합니까?",
     nextPage: "mq20",
     answer: "연필",
   },
   {
     listNumber: "문항 15",
     title:
-      "Q. 아래 그림과 같이 오각형이 겹쳐져 있는 그림이 있습니다. 이 그림을 따라 그리고 사진을 올려주세요.",
+      "Q. 위의 그림과 같이 오각형이 겹쳐져 있는 그림이 있습니다. 이 그림을 따라 그리고 사진을 올려주세요.",
     nextPage: "mq21",
     answer: "오각형",
   },
