@@ -82,8 +82,8 @@ const UserInput = () => {
         </div>
       </div>
       <div className="start_test">
-        <Link to="/mq1">
-          <div className="go_MMSE">MMSE검사 시작하기</div>
+        <Link to="/userInput2">
+          <div className="go_MMSE">이어서 입력하기</div>
         </Link>
       </div>
     </Layout>

@@ -32,6 +32,7 @@ import Q19 from "./pages/ListCheck/Surveys/Q19";
 import Q20 from "./pages/ListCheck/Surveys/Q20";
 
 import UserInput from "./pages/MMSECheckList/Surveys/userInput";
+import UserInput2 from "./pages/MMSECheckList/Surveys/userInput2";
 import MQ1 from "./pages/MMSECheckList/Surveys/MQ1";
 import MQ2 from "./pages/MMSECheckList/Surveys/MQ2";
 import MQ3 from "./pages/MMSECheckList/Surveys/MQ3";
@@ -66,6 +67,7 @@ function App() {
           <Route exact path="/mmse_result" component={MMSEResult} />
           <Route exact path="/clock_result" component={ClockResult} />
           <Route exact path="/userInput" component={UserInput} />
+          <Route exact path="/userInput2" component={UserInput2} />
           <Route exact path="/preventive" component={Preventive} />
           <Route exact path="/preventive2" component={Preventive2} />
           <Route exact path="/preventive3" component={Preventive3} />
