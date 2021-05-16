@@ -61,9 +61,9 @@ const ClockCheck = () => {
     // ClockGood 80% 이상
     if (ClockGood === -1) {
       return (
-        <h2 className="wait-message">
+        <h4 className="wait-message">
           이미지를 업로드 후, 3초만 기다려주세요.
-        </h2>
+        </h4>
       );
     } else if (ClockGood >= 80) {
       return <h2 className="normal">정상입니다~</h2>;

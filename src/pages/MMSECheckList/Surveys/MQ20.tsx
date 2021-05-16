@@ -78,9 +78,9 @@ const MQ20 = () => {
         </h2>
       );
     } else if (PentagonGood >= 80) {
-      return <h1 className="pentagon_result">정상입니다~</h1>;
+      return <h4 className="pentagon_result">정상입니다.</h4>;
     } else {
-      return <h1 className="pentagon_result">치매가 의심됩니다.</h1>;
+      return <h4 className="pentagon_result">치매가 의심됩니다.</h4>;
     }
   };
 
@@ -88,10 +88,10 @@ const MQ20 = () => {
     <Layout>
       <div className="question-title">문항 15</div>
       <div className="outer">
-        <h2 className="Question_mq">
+        <h3 className="Question_mq">
           Q. 아래 그림과 같이 오각형이 겹쳐져 있는 그림이 있습니다. 이 그림을
           따라 그리고 사진을 올려주세요.
-        </h2>
+        </h3>
       </div>
       <div className="image-upload-wrap">
         <img ref={myImage} src={ImageData} className="image_upload" />
