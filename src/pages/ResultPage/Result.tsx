@@ -3,6 +3,7 @@ import Layout from "../../partials/Layout";
 import useCalcScore from "../../redux/hooks/useCalcScore";
 import { Link } from "react-router-dom";
 import "./resultStyle.scss";
+import depressionStandard from "./img/depressionStandard.png";
 
 const Result = () => {
   const { score } = useCalcScore();
@@ -38,9 +39,17 @@ const Result = () => {
   if (score > 25) {
     return (
       <Layout>
-        <h1 className="check_result">검사 결과</h1>
         <h1 className="result_score">합산 점수 : {score}점 </h1>
         <div className="result_description2">{renderDepressionResult()}</div>
+      
+        <h1 className="check_result">채점 기준</h1>
+        <div className="result_description2">
+          <div className="result_description">
+          0~15점 : 우울하지 않은 상태<br></br>
+          16~24점 : 가벼운 우울 상태<br></br>
+          25점 이상 : 심각한 우울 상태
+          </div>
+        </div>
         <div className="return_test">
           <Link to="/q1">
             <button className="submit_btn">다시 테스트하기</button>
@@ -51,9 +60,17 @@ const Result = () => {
   } else {
     return (
       <Layout>
-        <h1 className="check_result">검사 결과</h1>
         <h1 className="result_score">합산 점수 : {score}점 </h1>
         <div className="result_description2">{renderDepressionResult()}</div>
+
+        <h1 className="check_result">채점 기준</h1>
+        <div className="result_description2">
+          <div className="result_description">
+            0~15점 : 우울하지 않은 상태<br></br>
+            16~24점 : 가벼운 우울 상태<br></br>
+            25점 이상 : 심각한 우울 상태
+          </div>
+        </div>
         <div className="return_test">
           <Link to="/q1">
             <button className="submit_btn">다시 테스트하기</button>
