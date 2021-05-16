@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../../ShapeCheck/shapeStyle.scss";
+import "../../../partials/surveyStyle.scss";
 import Layout from "../../../partials/Layout";
 import * as tf from "@tensorflow/tfjs";
 import * as tmImage from "@teachablemachine/image";
@@ -86,7 +86,7 @@ const MQ20 = () => {
       <img src={pentagon} alt="mypic" className="pentagon__img" />
 
       <h2>
-        Q. 아래 그림과 같이 오각형이 겹쳐져 있는 그림이 있습니다. 이 그림을 따라
+        Q. 위의 그림과 같이 오각형이 겹쳐져 있는 그림이 있습니다. 이 그림을 따라
         그리고 사진을 올려주세요.
       </h2>
       <div className="image-upload-wrap">
