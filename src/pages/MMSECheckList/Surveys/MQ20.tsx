@@ -73,9 +73,9 @@ const MQ20 = () => {
     // PentagonGood 80% 이상
     if (PentagonGood === -1) {
       return (
-        <h1 className="pentagon_result">
+        <h2 className="pentagon_result">
           이미지를 업로드 후, 3초만 기다려주세요.
-        </h1>
+        </h2>
       );
     } else if (PentagonGood >= 80) {
       return <h1 className="pentagon_result">정상입니다~</h1>;
@@ -87,10 +87,12 @@ const MQ20 = () => {
   return (
     <Layout>
       <div className="question-title">문항 15</div>
-      <h2 className="Question_mq">
-        Q. 아래 그림과 같이 오각형이 겹쳐져 있는 그림이 있습니다. 이 그림을 따라
-        그리고 사진을 올려주세요.
-      </h2>
+      <div className="outer">
+        <h2 className="Question_mq">
+          Q. 아래 그림과 같이 오각형이 겹쳐져 있는 그림이 있습니다. 이 그림을
+          따라 그리고 사진을 올려주세요.
+        </h2>
+      </div>
       <div className="image-upload-wrap">
         <img ref={myImage} src={ImageData} className="image_upload" />
       </div>
