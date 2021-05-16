@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 50px auto;
+  margin: 30px auto;
   .submit_btn {
     cursor: pointer;
     width: 160px;
@@ -24,7 +24,8 @@
 
 .result_score {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  background: linear-gradient(to top, #ddd1f7f5, #f8f5fff5);
 }
 .result_description2 {
   display: flex;
@@ -32,7 +33,7 @@
   border-radius: 8px;
   align-items: center;
   justify-content: center;
-  margin: auto 2%;
+  margin: 15px 2%;
   .result_description {
     margin: 10% 3%;
     width: 100%;
@@ -43,6 +44,6 @@
 
 .check_result {
   text-align: center;
-  font-size: 40px;
-  padding-bottom: 50px;
+  margin-bottom: 10px;
+  background: linear-gradient(to top, #ddd1f7f5, #f8f5fff5);
 }

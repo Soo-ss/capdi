@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../partials/Layout";
+import MMSEStandard from "./img/MMSEStandard.png";
 import useCalcScore from "../../redux/hooks/useCalcScore";
 import { Link } from "react-router-dom";
 import "./resultStyle.scss";
@@ -34,9 +35,12 @@ const MMSEResult = () => {
 
   return (
     <Layout>
-      <h1 className="check_result">검사 결과</h1>
       <h1 className="result_score">합산 점수 : {mmseScore}점 </h1>
-      <div className="result_description2">{render_MMSEResult()}</div>
+      <div className="result_description2">
+        {render_MMSEResult()}</div>
+      <h1 className="check_result">채점 기준표</h1>
+      <img src={MMSEStandard} alt="mypic" className="standard__img" />
+      {"*"}위의 표에 제시된 점수 이하일 경우 진단검사로 의뢰합니다.
 
       <div className="return_test">
         <Link to="/mq1">
