@@ -4,6 +4,7 @@ import useCalcScore from "../../redux/hooks/useCalcScore";
 import { Link } from "react-router-dom";
 import "./resultStyle.scss";
 
+
 const MMSEResult = () => {
   const { mmseScore } = useCalcScore();
 
