@@ -18,10 +18,16 @@
   }
 }
 
-.check_alert {
-  font-size: 17px;
-  position: relative;
-  margin: 50px 80px;
+.alert_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  .check_alert {
+    font-size: 17px;
+    width: 160px;
+    padding: 10px;
+  }
 }
 
 .question {
