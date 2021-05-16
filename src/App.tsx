@@ -31,7 +31,7 @@ import Q18 from "./pages/ListCheck/Surveys/Q18";
 import Q19 from "./pages/ListCheck/Surveys/Q19";
 import Q20 from "./pages/ListCheck/Surveys/Q20";
 
-import UserInput from "./pages/MMSECheckList/Surveys/UserInput";
+import UserInput from "./pages/MMSECheckList/Surveys/userInput";
 import MQ1 from "./pages/MMSECheckList/Surveys/MQ1";
 import MQ2 from "./pages/MMSECheckList/Surveys/MQ2";
 import MQ3 from "./pages/MMSECheckList/Surveys/MQ3";
