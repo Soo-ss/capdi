@@ -50,7 +50,9 @@ const SurveyReversed = (props: IProps) => {
         );
       })}
       {Checked === -1 ? (
-        <p className="check_alert">반드시 체크해주세요!!</p>
+        <div className="alert_wrap">
+          <p className="check_alert">반드시 체크해주세요!!</p>
+        </div>
       ) : (
         <div className="next_wrap">
           <Link
