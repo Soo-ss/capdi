@@ -132,15 +132,13 @@ export const lists = [
   },
   {
     listNumber: "문항 16",
-    title:
-      "Q. (보호자분꼐서 피시험자분의 답을 보고 득점을 체크해주세요) 옷은 왜 빨아서 입습니까?",
+    title: "Q. 옷은 왜 빨아서 입습니까?",
     nextPage: "mq22",
     answer: "청결",
   },
   {
     listNumber: "문항 17",
-    title:
-      'Q. (보호자분께서 피시험자분의 답을 보고 득점을 체크해주세요) "티끌 모아 태산"은 무슨 뜻입니까?',
+    title: 'Q. "티끌 모아 태산"은 무슨 뜻입니까?',
     nextPage: "mmse_result",
     answer: "조금씩 모으다 보면 언젠가는",
   },
