@@ -4,7 +4,6 @@ import useCalcScore from "../../redux/hooks/useCalcScore";
 import { Link } from "react-router-dom";
 import "./resultStyle.scss";
 
-
 const MMSEResult = () => {
   const { mmseScore } = useCalcScore();
 
@@ -43,7 +42,7 @@ const MMSEResult = () => {
         <Link to="/mq1">
           <button className="submit_btn">다시 테스트하기</button>
         </Link>
-        <Link to="/userInput">
+        <Link to="/clock">
           <button className="submit_btn">시계그리기 검사하기</button>
         </Link>
       </div>
