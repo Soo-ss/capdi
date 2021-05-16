@@ -30,7 +30,9 @@ const MMSESurvey = (props: IProps) => {
         />
       </div>
       {CheckAnswer === "" ? (
-        <p className="check_alert">반드시 입력해주세요!!</p>
+        <div className="alert_wrap">
+          <p className="check_alert">반드시 입력해주세요!!</p>
+        </div>
       ) : (
         <div className="next_wrap">
           <Link
